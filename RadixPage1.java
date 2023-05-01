@@ -1,5 +1,18 @@
 package Finals;
 
+/* 
+current features:
+- base GUI
+- validation of user input
+- generates textboxes based on user input
+- sample animation
+
+to-do:
+- make some progress in the animation
+- validation of input for each generated textbox
+- functionality of the "Sort" button (to check inputs in textboxes; similar to the function of "Enter" button)
+*/
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
@@ -108,9 +121,7 @@ public class RadixPage1 extends JFrame {
                         	animateFields();                        
                         }
                         });
-                    
-                    
-                    
+                                                         
                     // Update the UI to show the new text boxes
                     contentPane.revalidate();
                     contentPane.repaint();
@@ -133,8 +144,7 @@ public class RadixPage1 extends JFrame {
         int step = 5;
         int delay = 50;
         int steps = 10;
-     
-        
+             
         for(int i = -1; i < input; i++) {
         	try {
                 Thread.sleep(50);
@@ -168,4 +178,3 @@ public class RadixPage1 extends JFrame {
     timer.start();
 
 	}
-
