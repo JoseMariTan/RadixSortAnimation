@@ -1,4 +1,4 @@
-Package Finals;
+package Finals;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -66,44 +66,54 @@ public class RadixPage1 extends JFrame {
         num1.setBackground(new Color(255, 255, 255));
         num1.setFont(new Font("Tahoma", Font.PLAIN, 20));
         num1.setBounds(347, 11, 33, 25);
+        num1.setOpaque(true);
+        num1.setBackground(Color.WHITE);
         getContentPane().add(num1);
         
         JLabel num4 = new JLabel("135");
         num4.setFont(new Font("Tahoma", Font.PLAIN, 20));
         num4.setBounds(476, 11, 33, 25);
+        num4.setOpaque(true);
+        num4.setBackground(Color.WHITE);
         getContentPane().add(num4);
         
         JLabel num3 = new JLabel("703");
         num3.setFont(new Font("Tahoma", Font.PLAIN, 20));
         num3.setBounds(433, 11, 33, 25);
+        num3.setOpaque(true);
+        num3.setBackground(Color.WHITE);
         getContentPane().add(num3);
         
         JLabel num5 = new JLabel("888");
         num5.setFont(new Font("Tahoma", Font.PLAIN, 20));
         num5.setBounds(519, 11, 33, 25);
+        num5.setOpaque(true);
+        num5.setBackground(Color.WHITE);
         getContentPane().add(num5);
         
         JLabel num2 = new JLabel("221");
         num2.setFont(new Font("Tahoma", Font.PLAIN, 20));
         num2.setBounds(390, 11, 33, 25);
+        num2.setOpaque(true);
+        num2.setBackground(Color.WHITE);
         getContentPane().add(num2);
         
-        JLabel lblPass = new JLabel("Pass 1:");
+        JLabel lblPass = new JLabel("Pass #1");
         lblPass.setFont(new Font("Tahoma", Font.PLAIN, 20));
         lblPass.setBackground(Color.WHITE);
-        lblPass.setBounds(78, 68, 64, 25);
+        lblPass.setBounds(24, 68, 72, 25);
         getContentPane().add(lblPass);
         
-        JLabel lblPass_3 = new JLabel("Pass 2:");
+        JLabel lblPass_3 = new JLabel("Pass #2");
         lblPass_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
         lblPass_3.setBackground(Color.WHITE);
-        lblPass_3.setBounds(364, 104, 64, 25);
+        lblPass_3.setBounds(309, 104, 72, 25);
         getContentPane().add(lblPass_3);
         
-        JLabel lblPass_1 = new JLabel("Pass 3:");
+        JLabel lblPass_1 = new JLabel("Pass #3");
         lblPass_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
         lblPass_1.setBackground(Color.WHITE);
-        lblPass_1.setBounds(659, 140, 64, 25);
+        lblPass_1.setBounds(605, 140, 72, 25);
         getContentPane().add(lblPass_1);
         
         JLabel lblPass_2 = new JLabel("2:");
@@ -289,35 +299,37 @@ public class RadixPage1 extends JFrame {
         JLabel numPass1 = new JLabel("221");
         numPass1.setBackground(new Color(255, 255, 255));
         numPass1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        numPass1.setBounds(152, 68, 33, 25);
+        numPass1.setBounds(105, 68, 33, 25);
         getContentPane().add(numPass1);
         numPass1.setVisible(false);
         
         JLabel numPass2 = new JLabel("703");
         numPass2.setBackground(new Color(255, 255, 255));
         numPass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        numPass2.setBounds(195, 68, 33, 25);
+        numPass2.setBounds(148, 68, 33, 25);
         getContentPane().add(numPass2);
         numPass2.setVisible(false);
         
         JLabel numPass3 = new JLabel("135");
         numPass3.setBackground(new Color(255, 255, 255));
         numPass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        numPass3.setBounds(238, 68, 33, 25);
+        numPass3.setBounds(191, 68, 33, 25);
         getContentPane().add(numPass3);
         numPass3.setVisible(false);
         
         JLabel numPass4 = new JLabel("467");
+        numPass4.setForeground(SystemColor.desktop);
         numPass4.setBackground(new Color(255, 255, 255));
         numPass4.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        numPass4.setBounds(281, 68, 33, 25);
+        numPass4.setBounds(234, 68, 33, 25);
         getContentPane().add(numPass4);
         numPass4.setVisible(false);
         
         JLabel numPass5 = new JLabel("888");
+        numPass5.setForeground(SystemColor.desktop);
         numPass5.setBackground(new Color(255, 255, 255));
         numPass5.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        numPass5.setBounds(324, 68, 33, 25);
+        numPass5.setBounds(277, 68, 33, 25);
         getContentPane().add(numPass5);
         numPass5.setVisible(false);
         
@@ -327,7 +339,7 @@ public class RadixPage1 extends JFrame {
 
         // Set the window properties
         setTitle("Radix Sort Animation");
-        setSize(915, 658);
+        setSize(951, 658);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -479,18 +491,22 @@ public class RadixPage1 extends JFrame {
                 if (timer4 == null || !timer4.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
                     int desiredY = 356; // set desired y-coordinate
-                    int speed = 2; // set movement speed
+                    int speed = 3; // set movement speed
 
                     timer4 = new Timer(10, new ActionListener() {
                         int x = num1.getX();
                         int y = num1.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x > desiredX) {
-                                x -= speed; // move to the left
-                            }
+                            
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
+                            if(y>= desiredY) {
+                            	if (x > desiredX) {
+                                    x -= speed; // move to the left
+                                }
+                            }
+                            
                             num1.setLocation(x, y);
                             if (x <= desiredX && y >= desiredY) {
                                 timer4.stop(); // stop when label reaches desired position
@@ -545,6 +561,8 @@ public class RadixPage1 extends JFrame {
                 }
                 
                 // PASS 2
+                
+                
                
                 JLabel newLabel6 = new JLabel(numPass2.getText());
                 newLabel6.setFont(numPass2.getFont());
@@ -561,6 +579,8 @@ public class RadixPage1 extends JFrame {
 
                 numPass2.setText("<html>" + builder6.toString() + "</html>");
                 
+                numPass2.setOpaque(true);
+                numPass2.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer6 == null || !timer6.isRunning()) {
@@ -604,7 +624,8 @@ public class RadixPage1 extends JFrame {
 
                 numPass1.setText("<html>" + builder7.toString() + "</html>");
                 
-                
+                numPass1.setOpaque(true);
+                numPass1.setBackground(Color.WHITE);
             	// start timer to move label to a specific position
                 if (timer7 == null || !timer7.isRunning()) {
                     int desiredX = 390; // set desired x-coordinate
@@ -647,6 +668,8 @@ public class RadixPage1 extends JFrame {
 
                 numPass3.setText("<html>" + builder8.toString() + "</html>");
                 
+                numPass3.setOpaque(true);
+                numPass3.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer8 == null || !timer8.isRunning()) {
@@ -690,6 +713,8 @@ public class RadixPage1 extends JFrame {
 
                 numPass4.setText("<html>" + builder9.toString() + "</html>");
                 
+                numPass4.setOpaque(true);
+                numPass4.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer9 == null || !timer9.isRunning()) {
@@ -733,6 +758,8 @@ public class RadixPage1 extends JFrame {
 
                 numPass5.setText("<html>" + builder10.toString() + "</html>");
                 
+                numPass5.setOpaque(true);
+                numPass5.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer10 == null || !timer10.isRunning()) {
