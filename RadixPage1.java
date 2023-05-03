@@ -1,4 +1,4 @@
-package Finals;
+Package Finals;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -9,16 +9,27 @@ import javax.swing.*;
 public class RadixPage1 extends JFrame {
 
 	private JPanel contentPane;
+	// timers for Pass 1
 	private Timer timer1;
 	private Timer timer2;
 	private Timer timer3;
 	private Timer timer4;
 	private Timer timer5;
+	
+	// timers for Pass 2
 	private Timer timer6;
 	private Timer timer7;
 	private Timer timer8;
 	private Timer timer9;
 	private Timer timer10;
+	
+	// timers for Pass 3
+	private Timer timer11;
+	private Timer timer12;
+	private Timer timer13;
+	private Timer timer14;
+	private Timer timer15;
+
 	
 	
 	
@@ -28,13 +39,26 @@ public class RadixPage1 extends JFrame {
 	private JLabel num4;
 	private JLabel num5;
 	
-	//pass 1 nums
+	//pass 2 nums
 	private JLabel numPass1;
 	private JLabel numPass2;
 	private JLabel numPass3;
 	private JLabel numPass4;
 	private JLabel numPass5;
-
+	
+	//pass 3 nums
+	private JLabel numPassA;
+	private JLabel numPassB;
+	private JLabel numPassC;
+	private JLabel numPassD;
+	private JLabel numPassE;
+	
+	//sorted array
+	private JLabel sortedNum1;
+	private JLabel sortedNum2;
+	private JLabel sortedNum3;
+	private JLabel sortedNum4;
+	private JLabel sortedNum5;
 	
 	/**
 	 * Launch the application.
@@ -98,19 +122,19 @@ public class RadixPage1 extends JFrame {
         num2.setBackground(Color.WHITE);
         getContentPane().add(num2);
         
-        JLabel lblPass = new JLabel("Pass #1");
+        JLabel lblPass = new JLabel("Pass 1:");
         lblPass.setFont(new Font("Tahoma", Font.PLAIN, 20));
         lblPass.setBackground(Color.WHITE);
         lblPass.setBounds(24, 68, 72, 25);
         getContentPane().add(lblPass);
         
-        JLabel lblPass_3 = new JLabel("Pass #2");
+        JLabel lblPass_3 = new JLabel("Pass 2:");
         lblPass_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
         lblPass_3.setBackground(Color.WHITE);
         lblPass_3.setBounds(309, 104, 72, 25);
         getContentPane().add(lblPass_3);
         
-        JLabel lblPass_1 = new JLabel("Pass #3");
+        JLabel lblPass_1 = new JLabel("Pass 3:");
         lblPass_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
         lblPass_1.setBackground(Color.WHITE);
         lblPass_1.setBounds(605, 140, 72, 25);
@@ -332,6 +356,86 @@ public class RadixPage1 extends JFrame {
         numPass5.setBounds(277, 68, 33, 25);
         getContentPane().add(numPass5);
         numPass5.setVisible(false);
+        
+        JLabel numPassA = new JLabel("703");
+        numPassA.setForeground(SystemColor.desktop);
+        numPassA.setBackground(new Color(255, 255, 255));
+        numPassA.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        numPassA.setBounds(390, 104, 33, 25);
+        getContentPane().add(numPassA);
+        numPassA.setVisible(false);
+        
+        JLabel numPassB = new JLabel("221");
+        numPassB.setForeground(SystemColor.desktop);
+        numPassB.setBackground(new Color(255, 255, 255));
+        numPassB.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        numPassB.setBounds(433, 104, 33, 25);
+        getContentPane().add(numPassB);
+        numPassB.setVisible(false);
+        
+        JLabel numPassC = new JLabel("135");
+        numPassC.setForeground(SystemColor.desktop);
+        numPassC.setBackground(new Color(255, 255, 255));
+        numPassC.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        numPassC.setBounds(476, 104, 33, 25);
+        getContentPane().add(numPassC);
+        numPassC.setVisible(false);
+        
+        JLabel numPassD = new JLabel("467");
+        numPassD.setForeground(SystemColor.desktop);
+        numPassD.setBackground(new Color(255, 255, 255));
+        numPassD.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        numPassD.setBounds(519, 104, 33, 25);
+        getContentPane().add(numPassD);
+        numPassD.setVisible(false);
+        
+        JLabel numPassE = new JLabel("888");
+        numPassE.setForeground(SystemColor.desktop);
+        numPassE.setBackground(new Color(255, 255, 255));
+        numPassE.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        numPassE.setBounds(562, 104, 33, 25);
+        getContentPane().add(numPassE);
+        numPassE.setVisible(false);
+        
+        JLabel sortedNum1 = new JLabel("135");
+        sortedNum1.setForeground(SystemColor.desktop);
+        sortedNum1.setBackground(new Color(255, 255, 255));
+        sortedNum1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum1.setBounds(687, 140, 33, 25);
+        getContentPane().add(sortedNum1);
+        sortedNum1.setVisible(false);
+        
+        JLabel sortedNum2 = new JLabel("221");
+        sortedNum2.setForeground(SystemColor.desktop);
+        sortedNum2.setBackground(new Color(255, 255, 255));
+        sortedNum2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum2.setBounds(730, 140, 33, 25);
+        getContentPane().add(sortedNum2);
+        sortedNum2.setVisible(false);
+        
+        JLabel sortedNum3 = new JLabel("467");
+        sortedNum3.setForeground(SystemColor.desktop);
+        sortedNum3.setBackground(new Color(255, 255, 255));
+        sortedNum3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum3.setBounds(773, 140, 33, 25);
+        getContentPane().add(sortedNum3);
+        sortedNum3.setVisible(false);
+        
+        JLabel sortedNum4 = new JLabel("703");
+        sortedNum4.setForeground(SystemColor.desktop);
+        sortedNum4.setBackground(new Color(255, 255, 255));
+        sortedNum4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum4.setBounds(816, 140, 33, 25);
+        getContentPane().add(sortedNum4);
+        sortedNum4.setVisible(false);
+        
+        JLabel sortedNum5 = new JLabel("888");
+        sortedNum5.setForeground(SystemColor.desktop);
+        sortedNum5.setBackground(new Color(255, 255, 255));
+        sortedNum5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum5.setBounds(859, 140, 33, 25);
+        getContentPane().add(sortedNum5);
+        sortedNum5.setVisible(false);
         
         JButton sortButton = new JButton("Sort");
         sortButton.setBounds(562, 11, 90, 25);
@@ -754,7 +858,7 @@ public class RadixPage1 extends JFrame {
 
                 StringBuilder builder10 = new StringBuilder(text10.substring(0, 1));
                 builder10.append("<font color='red'>" + secondChar5 + "</font>");
-                builder10.append(text5.substring(2));
+                builder10.append(text10.substring(2));
 
                 numPass5.setText("<html>" + builder10.toString() + "</html>");
                 
@@ -780,12 +884,258 @@ public class RadixPage1 extends JFrame {
                             numPass5.setLocation(x, y);
                             if (x >= desiredX && y >= desiredY) {
                                 timer10.stop(); // stop when label reaches desired position
+                                numPassA.setVisible(true);
+                                numPassB.setVisible(true);
+                                numPassC.setVisible(true);
+                                numPassD.setVisible(true);
+                                numPassE.setVisible(true);
+                                timer11.start();
                             }
                         }
                     });
 
                     
                 }
+                
+                // PASS 3
+                
+                JLabel newLabel11 = new JLabel(numPassC.getText());
+                newLabel11.setFont(numPassC.getFont());
+                newLabel11.setBounds(numPassC.getX(), numPassC.getY(), 
+                		numPassC.getWidth(), numPassC.getHeight());
+                numPassC.getParent().add(newLabel11);
+                
+                String text11 = numPassC.getText();
+                char firstChar = text11.charAt(0);
+
+                StringBuilder builder11 = new StringBuilder();
+                builder11.append("<font color='red'>" + firstChar + "</font>");
+                builder11.append(text11.substring(1));
+
+                numPassC.setText("<html>" + builder11.toString() + "</html>");
+                
+                numPassC.setOpaque(true);
+                numPassC.setBackground(Color.WHITE);
+                
+            	// start timer to move label to a specific position
+                if (timer11 == null || !timer11.isRunning()) {
+                    int desiredX = 687; // set desired x-coordinate
+                    int desiredY = 212; // set desired y-coordinate
+                    int speed = 2; // set movement speed
+
+                    timer11 = new Timer(10, new ActionListener() {
+                        int x = numPassC.getX();
+                        int y = numPassC.getY();
+                        public void actionPerformed(ActionEvent e) {
+                            if (x < desiredX) {
+                                x += speed; // move to the right
+                            }
+                            if (y < desiredY) {
+                                y += speed; // move down
+                            }
+                            numPassC.setLocation(x, y);
+                            if (x >= desiredX && y >= desiredY) {
+                                timer11.stop(); // stop when label reaches desired position
+                                timer12.start();
+
+                            }
+                        }
+                    });
+
+                    
+                }
+                
+                JLabel newLabel12 = new JLabel(numPassB.getText());
+                newLabel12.setFont(numPassB.getFont());
+                newLabel12.setBounds(numPassB.getX(), numPassB.getY(), 
+                		numPassB.getWidth(), numPassB.getHeight());
+                numPassB.getParent().add(newLabel12);
+                
+                String text12 = numPassB.getText();
+                char firstChar2 = text12.charAt(0);
+
+                StringBuilder builder12 = new StringBuilder();
+                builder12.append("<font color='red'>" + firstChar2 + "</font>");
+                builder12.append(text12.substring(1));
+
+                numPassB.setText("<html>" + builder12.toString() + "</html>");
+                
+                numPassB.setOpaque(true);
+                numPassB.setBackground(Color.WHITE);
+                
+            	// start timer to move label to a specific position
+                if (timer12 == null || !timer12.isRunning()) {
+                    int desiredX = 687; // set desired x-coordinate
+                    int desiredY = 248; // set desired y-coordinate
+                    int speed = 2; // set movement speed
+
+                    timer12 = new Timer(10, new ActionListener() {
+                        int x = numPassB.getX();
+                        int y = numPassB.getY();
+                        public void actionPerformed(ActionEvent e) {
+                            if (x < desiredX) {
+                                x += speed; // move to the right
+                            }
+                            if (y < desiredY) {
+                                y += speed; // move down
+                            }
+                            numPassB.setLocation(x, y);
+                            if (x >= desiredX && y >= desiredY) {
+                                timer12.stop(); // stop when label reaches desired position
+                                timer13.start();
+
+                            }
+                        }
+                    });
+
+                    
+                }
+                
+                JLabel newLabel13 = new JLabel(numPassD.getText());
+                newLabel13.setFont(numPassD.getFont());
+                newLabel13.setBounds(numPassD.getX(), numPassD.getY(), 
+                		numPassD.getWidth(), numPassD.getHeight());
+                numPassD.getParent().add(newLabel13);
+                
+                String text13 = numPassD.getText();
+                char firstChar3 = text13.charAt(0);
+
+                StringBuilder builder13 = new StringBuilder();
+                builder13.append("<font color='red'>" + firstChar3 + "</font>");
+                builder13.append(text13.substring(1));
+
+                numPassD.setText("<html>" + builder13.toString() + "</html>");
+                
+                numPassD.setOpaque(true);
+                numPassD.setBackground(Color.WHITE);
+                
+            	// start timer to move label to a specific position
+                if (timer13 == null || !timer13.isRunning()) {
+                    int desiredX = 687; // set desired x-coordinate
+                    int desiredY = 320; // set desired y-coordinate
+                    int speed = 2; // set movement speed
+
+                    timer13 = new Timer(10, new ActionListener() {
+                        int x = numPassD.getX();
+                        int y = numPassD.getY();
+                        public void actionPerformed(ActionEvent e) {
+                            if (x < desiredX) {
+                                x += speed; // move to the right
+                            }
+                            if (y < desiredY) {
+                                y += speed; // move down
+                            }
+                            numPassD.setLocation(x, y);
+                            if (x >= desiredX && y >= desiredY) {
+                                timer13.stop(); // stop when label reaches desired position
+                                timer14.start();
+
+
+                            }
+                        }
+                    });
+
+                    
+                }
+                
+                JLabel newLabel14 = new JLabel(numPassA.getText());
+                newLabel14.setFont(numPassA.getFont());
+                newLabel14.setBounds(numPassA.getX(), numPassA.getY(), 
+                		numPassA.getWidth(), numPassA.getHeight());
+                numPassA.getParent().add(newLabel14);
+                
+                String text14 = numPassA.getText();
+                char firstChar4 = text14.charAt(0);
+
+                StringBuilder builder14 = new StringBuilder();
+                builder14.append("<font color='red'>" + firstChar4 + "</font>");
+                builder14.append(text14.substring(1));
+
+                numPassA.setText("<html>" + builder14.toString() + "</html>");
+                
+                numPassA.setOpaque(true);
+                numPassA.setBackground(Color.WHITE);
+                
+            	// start timer to move label to a specific position
+                if (timer14 == null || !timer14.isRunning()) {
+                    int desiredX = 687; // set desired x-coordinate
+                    int desiredY = 428; // set desired y-coordinate
+                    int speed = 2; // set movement speed
+
+                    timer14 = new Timer(10, new ActionListener() {
+                        int x = numPassD.getX();
+                        int y = numPassD.getY();
+                        public void actionPerformed(ActionEvent e) {
+                            if (x < desiredX) {
+                                x += speed; // move to the right
+                            }
+                            if (y < desiredY) {
+                                y += speed; // move down
+                            }
+                            numPassA.setLocation(x, y);
+                            if (x >= desiredX && y >= desiredY) {
+                                timer14.stop(); // stop when label reaches desired position
+                                timer15.start();
+
+
+                            }
+                        }
+                    });
+
+                    
+                }
+     
+                JLabel newLabel15 = new JLabel(numPassE.getText());
+                newLabel15.setFont(numPassE.getFont());
+                newLabel15.setBounds(numPassE.getX(), numPassE.getY(), 
+                		numPassE.getWidth(), numPassE.getHeight());
+                numPassE.getParent().add(newLabel15);
+                
+                String text15 = numPassE.getText();
+                char firstChar5 = text15.charAt(0);
+
+                StringBuilder builder15 = new StringBuilder();
+                builder15.append("<font color='red'>" + firstChar5 + "</font>");
+                builder15.append(text15.substring(1));
+
+                numPassE.setText("<html>" + builder15.toString() + "</html>");
+                
+                numPassE.setOpaque(true);
+                numPassE.setBackground(Color.WHITE);
+                
+            	// start timer to move label to a specific position
+                if (timer15 == null || !timer15.isRunning()) {
+                    int desiredX = 687; // set desired x-coordinate
+                    int desiredY = 464; // set desired y-coordinate
+                    int speed = 2; // set movement speed
+
+                    timer15 = new Timer(10, new ActionListener() {
+                        int x = numPassD.getX();
+                        int y = numPassD.getY();
+                        public void actionPerformed(ActionEvent e) {
+                            if (x < desiredX) {
+                                x += speed; // move to the right
+                            }
+                            if (y < desiredY) {
+                                y += speed; // move down
+                            }
+                            numPassE.setLocation(x, y);
+                            if (x >= desiredX && y >= desiredY) {
+                                timer15.stop(); // stop when label reaches desired position
+                                sortedNum1.setVisible(true);
+                                sortedNum2.setVisible(true);
+                                sortedNum3.setVisible(true);
+                                sortedNum4.setVisible(true);
+                                sortedNum5.setVisible(true);
+                                
+
+                            }
+                        }
+                    });
+
+                    
+                }
+                
                 
                 
                 
