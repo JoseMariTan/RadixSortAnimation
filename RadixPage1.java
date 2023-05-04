@@ -1,4 +1,4 @@
-package Finals;
+Package Finals;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -358,7 +358,7 @@ public class RadixPage1 extends JFrame {
         getContentPane().add(numPass5);
         numPass5.setVisible(false);
         
-        JLabel numPassA = new JLabel("703");
+        JLabel numPassA = new JLabel("135");
         numPassA.setForeground(SystemColor.desktop);
         numPassA.setBackground(new Color(255, 255, 255));
         numPassA.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -374,7 +374,7 @@ public class RadixPage1 extends JFrame {
         getContentPane().add(numPassB);
         numPassB.setVisible(false);
         
-        JLabel numPassC = new JLabel("135");
+        JLabel numPassC = new JLabel("467");
         numPassC.setForeground(SystemColor.desktop);
         numPassC.setBackground(new Color(255, 255, 255));
         numPassC.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -382,7 +382,7 @@ public class RadixPage1 extends JFrame {
         getContentPane().add(numPassC);
         numPassC.setVisible(false);
         
-        JLabel numPassD = new JLabel("467");
+        JLabel numPassD = new JLabel("703");
         numPassD.setForeground(SystemColor.desktop);
         numPassD.setBackground(new Color(255, 255, 255));
         numPassD.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -691,73 +691,31 @@ public class RadixPage1 extends JFrame {
                 
                 
                
-                JLabel newLabel6 = new JLabel(numPass2.getText());
-                newLabel6.setFont(numPass2.getFont());
-                newLabel6.setBounds(numPass2.getX(), numPass2.getY(), 
-                		numPass2.getWidth(), numPass2.getHeight());
-                numPass2.getParent().add(newLabel6);
+                JLabel newLabel6 = new JLabel(numPass1.getText());
+                newLabel6.setFont(numPass1.getFont());
+                newLabel6.setBounds(numPass1.getX(), numPass1.getY(), 
+                		numPass1.getWidth(), numPass1.getHeight());
+                numPass1.getParent().add(newLabel6);
                 
-                String text6 = numPass2.getText();
+                String text6 = numPass1.getText();
                 char secondChar = text6.charAt(1);
 
                 StringBuilder builder6 = new StringBuilder(text6.substring(0, 1));
                 builder6.append("<font color='red'>" + secondChar + "</font>");
                 builder6.append(text6.substring(2));
 
-                numPass2.setText("<html>" + builder6.toString() + "</html>");
+                numPass1.setText("<html>" + builder6.toString() + "</html>");
                 
-                numPass2.setOpaque(true);
-                numPass2.setBackground(Color.WHITE);
+                numPass1.setOpaque(true);
+                numPass1.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer6 == null || !timer6.isRunning()) {
                     int desiredX = 390; // set desired x-coordinate
-                    int desiredY = 140; // set desired y-coordinate
-                    int speed = 2; // set movement speed
-
-                    timer6 = new Timer(10, new ActionListener() {
-                        int x = numPass2.getX();
-                        int y = numPass2.getY();
-                        public void actionPerformed(ActionEvent e) {
-                            if (x < desiredX) {
-                                x += speed; // move to the right
-                            }
-                            if (y < desiredY) {
-                                y += speed; // move down
-                            }
-                            numPass2.setLocation(x, y);
-                            if (x >= desiredX && y >= desiredY) {
-                                timer6.stop(); // stop when label reaches desired position
-                                timer7.start();
-                            }
-                        }
-                    });                
-                }
-                
-                JLabel newLabel7 = new JLabel(numPass1.getText());
-                newLabel7.setFont(numPass1.getFont());
-                newLabel7.setBounds(numPass1.getX(), numPass1.getY(), 
-                		numPass1.getWidth(), numPass1.getHeight());
-                numPass1.getParent().add(newLabel7);
-                
-                String text7 = numPass1.getText();
-                char secondChar2 = text7.charAt(1);
-
-                StringBuilder builder7 = new StringBuilder(text7.substring(0, 1));
-                builder7.append("<font color='red'>" + secondChar2 + "</font>");
-                builder7.append(text7.substring(2));
-
-                numPass1.setText("<html>" + builder7.toString() + "</html>");
-                
-                numPass1.setOpaque(true);
-                numPass1.setBackground(Color.WHITE);
-            	// start timer to move label to a specific position
-                if (timer7 == null || !timer7.isRunning()) {
-                    int desiredX = 390; // set desired x-coordinate
                     int desiredY = 212; // set desired y-coordinate
                     int speed = 2; // set movement speed
 
-                    timer7 = new Timer(10, new ActionListener() {
+                    timer6 = new Timer(10, new ActionListener() {
                         int x = numPass1.getX();
                         int y = numPass1.getY();
                         public void actionPerformed(ActionEvent e) {
@@ -768,6 +726,48 @@ public class RadixPage1 extends JFrame {
                                 y += speed; // move down
                             }
                             numPass1.setLocation(x, y);
+                            if (x >= desiredX && y >= desiredY) {
+                                timer6.stop(); // stop when label reaches desired position
+                                timer7.start();
+                            }
+                        }
+                    });                
+                }
+                
+                JLabel newLabel7 = new JLabel(numPass2.getText());
+                newLabel7.setFont(numPass2.getFont());
+                newLabel7.setBounds(numPass2.getX(), numPass2.getY(), 
+                		numPass2.getWidth(), numPass2.getHeight());
+                numPass2.getParent().add(newLabel7);
+                
+                String text7 = numPass2.getText();
+                char secondChar2 = text7.charAt(1);
+
+                StringBuilder builder7 = new StringBuilder(text7.substring(0, 1));
+                builder7.append("<font color='red'>" + secondChar2 + "</font>");
+                builder7.append(text7.substring(2));
+
+                numPass2.setText("<html>" + builder7.toString() + "</html>");
+                
+                numPass2.setOpaque(true);
+                numPass2.setBackground(Color.WHITE);
+            	// start timer to move label to a specific position
+                if (timer7 == null || !timer7.isRunning()) {
+                    int desiredX = 390; // set desired x-coordinate
+                    int desiredY = 140; // set desired y-coordinate
+                    int speed = 2; // set movement speed
+
+                    timer7 = new Timer(10, new ActionListener() {
+                        int x = numPass2.getX();
+                        int y = numPass2.getY();
+                        public void actionPerformed(ActionEvent e) {
+                            if (x < desiredX) {
+                                x += speed; // move to the right
+                            }
+                            if (y < desiredY) {
+                                y += speed; // move down
+                            }
+                            numPass2.setLocation(x, y);
                             if (x >= desiredX && y >= desiredY) {
                                 timer7.stop(); // stop when label reaches desired position
                                 timer8.start();
@@ -912,23 +912,23 @@ public class RadixPage1 extends JFrame {
                 
                 // PASS 3
                 
-                JLabel newLabel11 = new JLabel(numPassC.getText());
-                newLabel11.setFont(numPassC.getFont());
-                newLabel11.setBounds(numPassC.getX(), numPassC.getY(), 
-                		numPassC.getWidth(), numPassC.getHeight());
-                numPassC.getParent().add(newLabel11);
+                JLabel newLabel11 = new JLabel(numPassA.getText());
+                newLabel11.setFont(numPassA.getFont());
+                newLabel11.setBounds(numPassA.getX(), numPassA.getY(), 
+                		numPassA.getWidth(), numPassA.getHeight());
+                numPassA.getParent().add(newLabel11);
                 
-                String text11 = numPassC.getText();
+                String text11 = numPassA.getText();
                 char firstChar = text11.charAt(0);
 
                 StringBuilder builder11 = new StringBuilder();
                 builder11.append("<font color='red'>" + firstChar + "</font>");
                 builder11.append(text11.substring(1));
 
-                numPassC.setText("<html>" + builder11.toString() + "</html>");
+                numPassA.setText("<html>" + builder11.toString() + "</html>");
                 
-                numPassC.setOpaque(true);
-                numPassC.setBackground(Color.WHITE);
+                numPassA.setOpaque(true);
+                numPassA.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer11 == null || !timer11.isRunning()) {
@@ -937,8 +937,8 @@ public class RadixPage1 extends JFrame {
                     int speed = 2; // set movement speed
 
                     timer11 = new Timer(10, new ActionListener() {
-                        int x = numPassC.getX();
-                        int y = numPassC.getY();
+                        int x = numPassA.getX();
+                        int y = numPassA.getY();
                         public void actionPerformed(ActionEvent e) {
                             if (x < desiredX) {
                                 x += speed; // move to the right
@@ -946,7 +946,7 @@ public class RadixPage1 extends JFrame {
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
-                            numPassC.setLocation(x, y);
+                            numPassA.setLocation(x, y);
                             if (x >= desiredX && y >= desiredY) {
                                 timer11.stop(); // stop when label reaches desired position
                                 timer12.start();
@@ -998,23 +998,23 @@ public class RadixPage1 extends JFrame {
                     });                    
                 }
                 
-                JLabel newLabel13 = new JLabel(numPassD.getText());
-                newLabel13.setFont(numPassD.getFont());
-                newLabel13.setBounds(numPassD.getX(), numPassD.getY(), 
-                		numPassD.getWidth(), numPassD.getHeight());
-                numPassD.getParent().add(newLabel13);
+                JLabel newLabel13 = new JLabel(numPassC.getText());
+                newLabel13.setFont(numPassC.getFont());
+                newLabel13.setBounds(numPassC.getX(), numPassC.getY(), 
+                		numPassC.getWidth(), numPassC.getHeight());
+                numPassC.getParent().add(newLabel13);
                 
-                String text13 = numPassD.getText();
+                String text13 = numPassC.getText();
                 char firstChar3 = text13.charAt(0);
 
                 StringBuilder builder13 = new StringBuilder();
                 builder13.append("<font color='red'>" + firstChar3 + "</font>");
                 builder13.append(text13.substring(1));
 
-                numPassD.setText("<html>" + builder13.toString() + "</html>");
+                numPassC.setText("<html>" + builder13.toString() + "</html>");
                 
-                numPassD.setOpaque(true);
-                numPassD.setBackground(Color.WHITE);
+                numPassC.setOpaque(true);
+                numPassC.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer13 == null || !timer13.isRunning()) {
@@ -1023,8 +1023,8 @@ public class RadixPage1 extends JFrame {
                     int speed = 2; // set movement speed
 
                     timer13 = new Timer(10, new ActionListener() {
-                        int x = numPassD.getX();
-                        int y = numPassD.getY();
+                        int x = numPassC.getX();
+                        int y = numPassC.getY();
                         public void actionPerformed(ActionEvent e) {
                             if (x < desiredX) {
                                 x += speed; // move to the right
@@ -1032,7 +1032,7 @@ public class RadixPage1 extends JFrame {
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
-                            numPassD.setLocation(x, y);
+                            numPassC.setLocation(x, y);
                             if (x >= desiredX && y >= desiredY) {
                                 timer13.stop(); // stop when label reaches desired position
                                 timer14.start();
@@ -1041,23 +1041,23 @@ public class RadixPage1 extends JFrame {
                     });                 
                 }
                 
-                JLabel newLabel14 = new JLabel(numPassA.getText());
-                newLabel14.setFont(numPassA.getFont());
-                newLabel14.setBounds(numPassA.getX(), numPassA.getY(), 
-                		numPassA.getWidth(), numPassA.getHeight());
-                numPassA.getParent().add(newLabel14);
+                JLabel newLabel14 = new JLabel(numPassD.getText());
+                newLabel14.setFont(numPassD.getFont());
+                newLabel14.setBounds(numPassD.getX(), numPassD.getY(), 
+                		numPassD.getWidth(), numPassD.getHeight());
+                numPassD.getParent().add(newLabel14);
                 
-                String text14 = numPassA.getText();
+                String text14 = numPassD.getText();
                 char firstChar4 = text14.charAt(0);
 
                 StringBuilder builder14 = new StringBuilder();
                 builder14.append("<font color='red'>" + firstChar4 + "</font>");
                 builder14.append(text14.substring(1));
 
-                numPassA.setText("<html>" + builder14.toString() + "</html>");
+                numPassD.setText("<html>" + builder14.toString() + "</html>");
                 
-                numPassA.setOpaque(true);
-                numPassA.setBackground(Color.WHITE);
+                numPassD.setOpaque(true);
+                numPassD.setBackground(Color.WHITE);
                 
             	// start timer to move label to a specific position
                 if (timer14 == null || !timer14.isRunning()) {
@@ -1075,7 +1075,7 @@ public class RadixPage1 extends JFrame {
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
-                            numPassA.setLocation(x, y);
+                            numPassD.setLocation(x, y);
                             if (x >= desiredX && y >= desiredY) {
                                 timer14.stop(); // stop when label reaches desired position
                                 timer15.start();
