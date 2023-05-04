@@ -1,4 +1,4 @@
-Package Finals;
+package Finals;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -80,6 +80,7 @@ public class RadixPage1 extends JFrame {
 	 * Create the frame.
 	 */
 	public RadixPage1() {
+		getContentPane().setBackground(SystemColor.activeCaptionBorder);
         getContentPane().setLayout(null);
 		
 		
@@ -455,118 +456,137 @@ public class RadixPage1 extends JFrame {
             	 sortButton.setText("Sorting...");
        
          // PASS 1
-            	JLabel newLabel1 = new JLabel(num2.getText());
-                newLabel1.setFont(num2.getFont());
-                newLabel1.setBounds(num2.getX(), num2.getY(), 
+            	 
+            	 JLabel newLabel1 = new JLabel(num1.getText());
+                 newLabel1.setFont(num1.getFont());
+                 newLabel1.setBounds(num1.getX(), num1.getY(), 
+                 		num1.getWidth(), num1.getHeight());
+                 num1.getParent().add(newLabel1);
+          
+                 
+                 String text1 = num1.getText();
+                 char lastChar1 = text1.charAt(text1.length() - 1);
+
+                 StringBuilder builder1 = new StringBuilder(text1.substring(0, text1.length() - 1));
+                 builder1.append("<font color='red'>" + lastChar1 + "</font>");
+
+                 num1.setText("<html>" + builder1.toString() + "</html>");
+
+             	// start timer to move label to a specific position
+                 if (timer1 == null || !timer1.isRunning()) {
+                     int desiredX = 106; // set desired x-coordinate
+                     int desiredY = 356; // set desired y-coordinate
+                     int speed = 3; // set movement speed
+
+                     timer1 = new Timer(10, new ActionListener() {
+                         int x = num1.getX();
+                         int y = num1.getY();
+                         public void actionPerformed(ActionEvent e) {
+                             
+                         	if (x >= 322) {
+                                 x -= speed; // move to the left
+                         	}
+                         	if (x <= 322 && y < desiredY) {
+                                 y += speed; // move down                                  
+                             }
+                             if (y >= desiredY) {
+                                 x -= speed; // move left
+                             }
+                             
+                             num1.setLocation(x, y);
+                             if (x <= desiredX && y >= desiredY) {
+                                 timer1.stop(); // stop when label reaches desired position
+                                 timer2.start();
+                             }
+                         }
+                     });
+                     timer1.start(); 
+                 } 
+            	 
+            	 
+            	
+            	 
+            	JLabel newLabel2 = new JLabel(num2.getText());
+                newLabel2.setFont(num2.getFont());
+                newLabel2.setBounds(num2.getX(), num2.getY(), 
                 		num2.getWidth(), num2.getHeight());
-                num2.getParent().add(newLabel1);
+                num2.getParent().add(newLabel2);
                 
-                String text1 = num2.getText();
-                char lastChar1 = text1.charAt(text1.length() - 1);
-
-                StringBuilder builder1 = new StringBuilder(text1.substring(0, text1.length() - 1));
-                builder1.append("<font color='red'>" + lastChar1 + "</font>");
-
-                num2.setText("<html>" + builder1.toString() + "</html>");
-                
-                
-            	// start timer to move label to a specific position
-                if (timer1 == null || !timer1.isRunning()) {
-                    int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 140; // set desired y-coordinate
-                    int speed = 2; // set movement speed
-
-                    timer1 = new Timer(10, new ActionListener() {
-                        int x = num2.getX();
-                        int y = num2.getY();
-                        public void actionPerformed(ActionEvent e) {
-                            if (x > desiredX) {
-                                x -= speed; // move to the left
-                            }
-                            if (y < desiredY) {
-                                y += speed; // move down
-                            }
-                            num2.setLocation(x, y);
-                            if (x <= desiredX && y >= desiredY) {
-                                timer1.stop(); // stop when label reaches desired position
-                                timer2.start(); 
-                            }
-                        }
-                    });
-                    timer1.start(); 
-                    
-                }
-  
-                JLabel newLabel2 = new JLabel(num3.getText());
-                newLabel2.setFont(num3.getFont());
-                newLabel2.setBounds(num3.getX(), num3.getY(), 
-                		num3.getWidth(), num3.getHeight());
-                num3.getParent().add(newLabel2);
-                
-                String text2 = num3.getText();
+                String text2 = num2.getText();
                 char lastChar2 = text2.charAt(text2.length() - 1);
 
                 StringBuilder builder2 = new StringBuilder(text2.substring(0, text2.length() - 1));
                 builder2.append("<font color='red'>" + lastChar2 + "</font>");
 
-                num3.setText("<html>" + builder2.toString() + "</html>");
+                num2.setText("<html>" + builder2.toString() + "</html>");
+                
                 
             	// start timer to move label to a specific position
                 if (timer2 == null || !timer2.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 212; // set desired y-coordinate
-                    int speed = 2; // set movement speed
+                    int desiredY = 140; // set desired y-coordinate
+                    int speed = 3; // set movement speed
 
                     timer2 = new Timer(10, new ActionListener() {
-                        int x = num3.getX();
-                        int y = num3.getY();
+                        int x = num2.getX();
+                        int y = num2.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x > desiredX) {
+                        	if (x >= 322) {
                                 x -= speed; // move to the left
+                        	}
+                        	if (x <= 322 && y < desiredY) {
+                                y += speed; // move down                                  
                             }
-                            if (y < desiredY) {
-                                y += speed; // move down
+                            if (y >= desiredY) {
+                                x -= speed; // move left
                             }
-                            num3.setLocation(x, y);
+                            num2.setLocation(x, y);
                             if (x <= desiredX && y >= desiredY) {
                                 timer2.stop(); // stop when label reaches desired position
-                                timer3.start();
+                                timer3.start(); 
                             }
                         }
                     });
+                    
                 }
+  
+                JLabel newLabel3 = new JLabel(num3.getText());
+                newLabel3.setFont(num3.getFont());
+                newLabel3.setBounds(num3.getX(), num3.getY(), 
+                		num3.getWidth(), num3.getHeight());
+                num3.getParent().add(newLabel3);
                 
-                JLabel newLabel3 = new JLabel(num4.getText());
-                newLabel3.setFont(num4.getFont());
-                newLabel3.setBounds(num4.getX(), num4.getY(), 
-                		num4.getWidth(), num4.getHeight());
-                num4.getParent().add(newLabel3);
-                
-                String text3 = num4.getText();
+                String text3 = num3.getText();
                 char lastChar3 = text3.charAt(text3.length() - 1);
 
                 StringBuilder builder3 = new StringBuilder(text3.substring(0, text3.length() - 1));
                 builder3.append("<font color='red'>" + lastChar3 + "</font>");
 
-                num4.setText("<html>" + builder3.toString() + "</html>");
-
+                num3.setText("<html>" + builder3.toString() + "</html>");
+                
             	// start timer to move label to a specific position
                 if (timer3 == null || !timer3.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 284; // set desired y-coordinate
-                    int speed = 2; // set movement speed
+                    int desiredY = 212; // set desired y-coordinate
+                    int speed = 3; // set movement speed
 
                     timer3 = new Timer(10, new ActionListener() {
-                        int x = num4.getX();
-                        int y = num4.getY();
+                        int x = num3.getX();
+                        int y = num3.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x > desiredX) {
+
+                        	if (x >= 322) {
                                 x -= speed; // move to the left
+                        	}
+                        	if (x <= 322 && y < desiredY) {
+                                y += speed; // move down                                  
                             }
-                            if (y < desiredY) {
-                                y += speed; // move down
+                            if (y >= desiredY) {
+                                x -= speed; // move left
                             }
-                            num4.setLocation(x, y);
+                            
+                            
+                            num3.setLocation(x, y);
                             if (x <= desiredX && y >= desiredY) {
                                 timer3.stop(); // stop when label reaches desired position
                                 timer4.start();
@@ -575,43 +595,40 @@ public class RadixPage1 extends JFrame {
                     });
                 }
                 
+                JLabel newLabel4 = new JLabel(num4.getText());
+                newLabel4.setFont(num4.getFont());
+                newLabel4.setBounds(num4.getX(), num4.getY(), 
+                		num4.getWidth(), num4.getHeight());
+                num4.getParent().add(newLabel4);
                 
-                JLabel newLabel4 = new JLabel(num1.getText());
-                newLabel4.setFont(num1.getFont());
-                newLabel4.setBounds(num1.getX(), num1.getY(), 
-                		num1.getWidth(), num1.getHeight());
-                num1.getParent().add(newLabel4);
-         
-                
-                String text4 = num1.getText();
+                String text4 = num4.getText();
                 char lastChar4 = text4.charAt(text4.length() - 1);
 
                 StringBuilder builder4 = new StringBuilder(text4.substring(0, text4.length() - 1));
                 builder4.append("<font color='red'>" + lastChar4 + "</font>");
 
-                num1.setText("<html>" + builder4.toString() + "</html>");
+                num4.setText("<html>" + builder4.toString() + "</html>");
 
             	// start timer to move label to a specific position
                 if (timer4 == null || !timer4.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 356; // set desired y-coordinate
+                    int desiredY = 284; // set desired y-coordinate
                     int speed = 3; // set movement speed
 
                     timer4 = new Timer(10, new ActionListener() {
-                        int x = num1.getX();
-                        int y = num1.getY();
+                        int x = num4.getX();
+                        int y = num4.getY();
                         public void actionPerformed(ActionEvent e) {
-                            
-                            if (y < desiredY) {
-                                y += speed; // move down
+                        	if (x >= 322) {
+                                x -= speed; // move to the left
+                        	}
+                        	if (x <= 322 && y < desiredY) {
+                                y += speed; // move down                                  
                             }
-                            if(y>= desiredY) {
-                            	if (x > desiredX) {
-                                    x -= speed; // move to the left
-                                }
+                            if (y >= desiredY) {
+                                x -= speed; // move left
                             }
-                            
-                            num1.setLocation(x, y);
+                            num4.setLocation(x, y);
                             if (x <= desiredX && y >= desiredY) {
                                 timer4.stop(); // stop when label reaches desired position
                                 timer5.start();
@@ -619,6 +636,9 @@ public class RadixPage1 extends JFrame {
                         }
                     });
                 }
+                
+                
+             
                 
                 JLabel newLabel5 = new JLabel(num5.getText());
                 newLabel5.setFont(num5.getFont());
@@ -638,17 +658,20 @@ public class RadixPage1 extends JFrame {
                 if (timer5 == null || !timer5.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
                     int desiredY = 392; // set desired y-coordinate
-                    int speed = 2; // set movement speed
+                    int speed = 3; // set movement speed
 
                     timer5 = new Timer(10, new ActionListener() {
                         int x = num5.getX();
                         int y = num5.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x > desiredX) {
+                        	if (x >= 322) {
                                 x -= speed; // move to the left
+                        	}
+                        	if (x <= 322 && y < desiredY) {
+                                y += speed; // move down                                  
                             }
-                            if (y < desiredY) {
-                                y += speed; // move down
+                            if (y >= desiredY) {
+                                x -= speed; // move left
                             }
                             num5.setLocation(x, y);
                             if (x <= desiredX && y >= desiredY) {
@@ -708,9 +731,7 @@ public class RadixPage1 extends JFrame {
                                 timer7.start();
                             }
                         }
-                    });
-
-                    
+                    });                
                 }
                 
                 JLabel newLabel7 = new JLabel(numPass1.getText());
@@ -752,9 +773,7 @@ public class RadixPage1 extends JFrame {
                                 timer8.start();
                             }
                         }
-                    });
-
-                    
+                    });                  
                 }
                 
                 JLabel newLabel8 = new JLabel(numPass3.getText());
@@ -797,9 +816,7 @@ public class RadixPage1 extends JFrame {
                                 timer9.start();
                             }
                         }
-                    });
-
-                    
+                    });                  
                 }
                 
                 JLabel newLabel9 = new JLabel(numPass4.getText());
@@ -842,9 +859,7 @@ public class RadixPage1 extends JFrame {
                                 timer10.start();
                             }
                         }
-                    });
-
-                    
+                    });                  
                 }
                 
                 JLabel newLabel10 = new JLabel(numPass5.getText());
@@ -892,9 +907,7 @@ public class RadixPage1 extends JFrame {
                                 timer11.start();
                             }
                         }
-                    });
-
-                    
+                    });                   
                 }
                 
                 // PASS 3
@@ -937,12 +950,9 @@ public class RadixPage1 extends JFrame {
                             if (x >= desiredX && y >= desiredY) {
                                 timer11.stop(); // stop when label reaches desired position
                                 timer12.start();
-
                             }
                         }
-                    });
-
-                    
+                    });                    
                 }
                 
                 JLabel newLabel12 = new JLabel(numPassB.getText());
@@ -983,12 +993,9 @@ public class RadixPage1 extends JFrame {
                             if (x >= desiredX && y >= desiredY) {
                                 timer12.stop(); // stop when label reaches desired position
                                 timer13.start();
-
                             }
                         }
-                    });
-
-                    
+                    });                    
                 }
                 
                 JLabel newLabel13 = new JLabel(numPassD.getText());
@@ -1029,13 +1036,9 @@ public class RadixPage1 extends JFrame {
                             if (x >= desiredX && y >= desiredY) {
                                 timer13.stop(); // stop when label reaches desired position
                                 timer14.start();
-
-
                             }
                         }
-                    });
-
-                    
+                    });                 
                 }
                 
                 JLabel newLabel14 = new JLabel(numPassA.getText());
@@ -1076,13 +1079,9 @@ public class RadixPage1 extends JFrame {
                             if (x >= desiredX && y >= desiredY) {
                                 timer14.stop(); // stop when label reaches desired position
                                 timer15.start();
-
-
                             }
                         }
-                    });
-
-                    
+                    });                    
                 }
      
                 JLabel newLabel15 = new JLabel(numPassE.getText());
@@ -1127,18 +1126,10 @@ public class RadixPage1 extends JFrame {
                                 sortedNum3.setVisible(true);
                                 sortedNum4.setVisible(true);
                                 sortedNum5.setVisible(true);
-                                
-
                             }
                         }
-                    });
-
-                    
-                }
-                
-                
-                
-                
+                    }); 
+                }  
             }
         });} 
 }
