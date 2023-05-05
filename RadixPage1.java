@@ -18,7 +18,9 @@ public class RadixPage1 extends JFrame {
 	private JTextField box5;
 	private JButton enterButton;
 	
-	public static int[] values = new int[5];
+	public static int[] valuesA = new int[5];
+	public static String[] valuesB = new String[5];
+	
 	/**
 	 * Launch the application.
 	 */
@@ -89,12 +91,24 @@ public class RadixPage1 extends JFrame {
                         String text5 = box5.getText();
 
                         try {
-                            values[0] = Integer.parseInt(text1);
-                            values[1] = Integer.parseInt(text2);
-                            values[2] = Integer.parseInt(text3);
-                            values[3] = Integer.parseInt(text4);
-                            values[4] = Integer.parseInt(text5);
-                            if(values[0] > 999 || values[1] > 999 || values[2] > 999 || values[3] > 999 || values[4] > 999) {
+                        	valuesB[0] = text1;
+                            valuesB[1] = text2;
+                            valuesB[2] = text3;
+                            valuesB[3] = text4;
+                            valuesB[4] = text5;
+                        	
+                            for(int i = 0; i < 5; i++) {
+                            	if (valuesB[i].length() < 3) {
+                            		valuesB[i] = "0".repeat(3 - valuesB[i].length()) + valuesB[i];
+                                }
+                            }
+                            
+                            valuesA[0] = Integer.parseInt(text1);
+                            valuesA[1] = Integer.parseInt(text2);
+                            valuesA[2] = Integer.parseInt(text3);
+                            valuesA[3] = Integer.parseInt(text4);
+                            valuesA[4] = Integer.parseInt(text5);
+                            if(valuesA[0] > 999 || valuesA[1] > 999 || valuesA[2] > 999 || valuesA[3] > 999 || valuesA[4] > 999) {
                         		JOptionPane.showMessageDialog(null, "Values must not exceed 1000.", "Error", JOptionPane.ERROR_MESSAGE);
                         		System.exit(0);
                         	}
