@@ -59,6 +59,8 @@ public class RadixSortAnimation extends JFrame {
 	private JLabel sortedNum3;
 	private JLabel sortedNum4;
 	private JLabel sortedNum5;
+
+	
 	
 	/**
 	 * Launch the application.
@@ -75,7 +77,27 @@ public class RadixSortAnimation extends JFrame {
 			}
 		});
 	}
-
+	
+	public boolean checkForJLabel(Container container, int desiredX, int desiredY) {
+	    Component[] components = container.getComponents();
+	    for (Component component : components) {
+	        if (component instanceof JLabel) {
+	            JLabel label = (JLabel) component;
+	            int x = label.getX();
+	            int y = label.getY();
+	            if (x == desiredX && y == desiredY) {
+	                // Found a JLabel at the desired coordinates.
+	                return true;
+	            } else if (x == 106 && y == desiredY) {
+	                // A label is already at 106, so shift the desired X coordinate by 50.
+	                desiredX += 50;
+	            }
+	        }
+	    }
+	    // No JLabel found at the desired coordinates.
+	    return false;
+	}
+	
 	/**
 	 * Create the frame.
 	 */
@@ -449,13 +471,13 @@ public class RadixSortAnimation extends JFrame {
         
         
         
-        int[] userInput = RadixPage1.values;
+        String[] userInput = RadixPage1.valuesB;
         // update the labels with the input values from the first frame
-        num1.setText(Integer.toString(userInput[0]));
-        num2.setText(Integer.toString(userInput[1]));
-        num3.setText(Integer.toString(userInput[2]));
-        num4.setText(Integer.toString(userInput[3]));
-        num5.setText(Integer.toString(userInput[4]));
+        num1.setText(userInput[0]);
+        num2.setText(userInput[1]);
+        num3.setText(userInput[2]);
+        num4.setText(userInput[3]);
+        num5.setText(userInput[4]);
         
         sortButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -481,8 +503,37 @@ public class RadixSortAnimation extends JFrame {
 
              	// start timer to move label to a specific position
                  if (timer1 == null || !timer1.isRunning()) {
-                     int desiredX = 106; // set desired x-coordinate
-                     int desiredY = 356; // set desired y-coordinate
+                	 int desiredX = 106; // set desired x-coordinate
+                     final int desiredY; // set desired y-coordinate
+
+                     if (userInput[0].charAt(2) == '0') {
+                    	    desiredY = 104;
+                    	} else if (userInput[0].charAt(2) == '1') {
+                    	    desiredY = 140;
+                    	} else if (userInput[0].charAt(2) == '2') {
+                    	    desiredY = 176;
+                    	} else if (userInput[0].charAt(2) == '3') {
+                    	    desiredY = 212;
+                    	} else if (userInput[0].charAt(2) == '4') {
+                    	    desiredY = 248;
+                    	} else if (userInput[0].charAt(2) == '5') {
+                    	    desiredY = 284;
+                    	} else if (userInput[0].charAt(2) == '6') {
+                    	    desiredY = 320;
+                    	} else if (userInput[0].charAt(2) == '7') {
+                    	    desiredY = 356;
+                    	} else if (userInput[0].charAt(2) == '8') {
+                    	    desiredY = 392;
+                    	} else if (userInput[0].charAt(2) == '9') {
+                    	    desiredY = 428;
+                    	} else {
+                    	    // handle invalid input
+                    	    desiredY = 0; // assign a default value
+                    	}
+
+                     
+                     
+                     
                      int speed = 3; // set movement speed
 
                      timer1 = new Timer(10, new ActionListener() {
@@ -490,15 +541,17 @@ public class RadixSortAnimation extends JFrame {
                          int y = num1.getY();
                          public void actionPerformed(ActionEvent e) {
                              
-                         	if (x >= 322) {
-                                 x -= speed; // move to the left
-                         	}
-                         	if (x <= 322 && y < desiredY) {
-                                 y += speed; // move down                                  
-                             }
-                             if (y >= desiredY) {
-                                 x -= speed; // move left
-                             }
+                        	 if (x >= 322) {
+                        		    x -= speed; // move to the left
+                        		}
+                        		if (x <= 322 && y < desiredY) {
+                        		    y += speed; // move down   
+                        		    // check if the label is below the desired Y-coordinate 
+                        		    // before moving to the left
+                        		}
+                        		if (y >= desiredY) {
+                        		    x -= speed; // move left
+                        		}
                              
                              num1.setLocation(x, y);
                              if (x <= desiredX && y >= desiredY) {
@@ -531,7 +584,37 @@ public class RadixSortAnimation extends JFrame {
             	// start timer to move label to a specific position
                 if (timer2 == null || !timer2.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 140; // set desired y-coordinate
+                    final int desiredY; // set desired y-coordinate
+                    
+                    
+                    
+                    if (userInput[1].charAt(2) == '0') {
+                	    desiredY = 104;
+                	} else if (userInput[1].charAt(2) == '1') {
+                	    desiredY = 140;
+                	} else if (userInput[1].charAt(2) == '2') {
+                	    desiredY = 176;
+                	} else if (userInput[1].charAt(2) == '3') {
+                	    desiredY = 212;
+                	} else if (userInput[1].charAt(2) == '4') {
+                	    desiredY = 248;
+                	} else if (userInput[1].charAt(2) == '5') {
+                	    desiredY = 284;
+                	} else if (userInput[1].charAt(2) == '6') {
+                	    desiredY = 320;
+                	} else if (userInput[1].charAt(2) == '7') {
+                	    desiredY = 356;
+                	} else if (userInput[1].charAt(2) == '8') {
+                	    desiredY = 392;
+                	} else if (userInput[1].charAt(2) == '9') {
+                	    desiredY = 428;
+                	} else {
+                	    // handle invalid input
+                	    desiredY = 0; // assign a default value
+                	}
+                    
+                    checkForJLabel(newLabel1, desiredX, desiredY);
+                    
                     int speed = 3; // set movement speed
 
                     timer2 = new Timer(10, new ActionListener() {
@@ -574,7 +657,34 @@ public class RadixSortAnimation extends JFrame {
             	// start timer to move label to a specific position
                 if (timer3 == null || !timer3.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 212; // set desired y-coordinate
+                    final int desiredY; // set desired y-coordinate
+                    
+                    if (userInput[2].charAt(2) == '0') {
+                	    desiredY = 104;
+                	} else if (userInput[2].charAt(2) == '1') {
+                	    desiredY = 140;
+                	} else if (userInput[2].charAt(2) == '2') {
+                	    desiredY = 176;
+                	} else if (userInput[2].charAt(2) == '3') {
+                	    desiredY = 212;
+                	} else if (userInput[2].charAt(2) == '4') {
+                	    desiredY = 248;
+                	} else if (userInput[2].charAt(2) == '5') {
+                	    desiredY = 284;
+                	} else if (userInput[2].charAt(2) == '6') {
+                	    desiredY = 320;
+                	} else if (userInput[2].charAt(2) == '7') {
+                	    desiredY = 356;
+                	} else if (userInput[2].charAt(2) == '8') {
+                	    desiredY = 392;
+                	} else if (userInput[2].charAt(2) == '9') {
+                	    desiredY = 428;
+                	} else {
+                	    // handle invalid input
+                	    desiredY = 0; // assign a default value
+                	}
+                    
+                    
                     int speed = 3; // set movement speed
 
                     timer3 = new Timer(10, new ActionListener() {
@@ -619,7 +729,34 @@ public class RadixSortAnimation extends JFrame {
             	// start timer to move label to a specific position
                 if (timer4 == null || !timer4.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 284; // set desired y-coordinate
+                    final int desiredY; // set desired y-coordinate
+                    
+                    if (userInput[3].charAt(2) == '0') {
+                	    desiredY = 104;
+                	} else if (userInput[3].charAt(2) == '1') {
+                	    desiredY = 140;
+                	} else if (userInput[3].charAt(2) == '2') {
+                	    desiredY = 176;
+                	} else if (userInput[3].charAt(2) == '3') {
+                	    desiredY = 212;
+                	} else if (userInput[3].charAt(2) == '4') {
+                	    desiredY = 248;
+                	} else if (userInput[3].charAt(2) == '5') {
+                	    desiredY = 284;
+                	} else if (userInput[3].charAt(2) == '6') {
+                	    desiredY = 320;
+                	} else if (userInput[3].charAt(2) == '7') {
+                	    desiredY = 356;
+                	} else if (userInput[3].charAt(2) == '8') {
+                	    desiredY = 392;
+                	} else if (userInput[3].charAt(2) == '9') {
+                	    desiredY = 428;
+                	} else {
+                	    // handle invalid input
+                	    desiredY = 0; // assign a default value
+                	}
+                    
+                    
                     int speed = 3; // set movement speed
 
                     timer4 = new Timer(10, new ActionListener() {
@@ -664,7 +801,34 @@ public class RadixSortAnimation extends JFrame {
             	// start timer to move label to a specific position
                 if (timer5 == null || !timer5.isRunning()) {
                     int desiredX = 106; // set desired x-coordinate
-                    int desiredY = 392; // set desired y-coordinate
+                    final int desiredY; // set desired y-coordinate
+                    
+                    if (userInput[4].charAt(2) == '0') {
+                	    desiredY = 104;
+                	} else if (userInput[4].charAt(2) == '1') {
+                	    desiredY = 140;
+                	} else if (userInput[4].charAt(2) == '2') {
+                	    desiredY = 176;
+                	} else if (userInput[4].charAt(2) == '3') {
+                	    desiredY = 212;
+                	} else if (userInput[4].charAt(2) == '4') {
+                	    desiredY = 248;
+                	} else if (userInput[4].charAt(2) == '5') {
+                	    desiredY = 284;
+                	} else if (userInput[4].charAt(2) == '6') {
+                	    desiredY = 320;
+                	} else if (userInput[4].charAt(2) == '7') {
+                	    desiredY = 356;
+                	} else if (userInput[4].charAt(2) == '8') {
+                	    desiredY = 392;
+                	} else if (userInput[4].charAt(2) == '9') {
+                	    desiredY = 428;
+                	} else {
+                	    // handle invalid input
+                	    desiredY = 0; // assign a default value
+                	}
+                    
+                    
                     int speed = 3; // set movement speed
 
                     timer5 = new Timer(10, new ActionListener() {
