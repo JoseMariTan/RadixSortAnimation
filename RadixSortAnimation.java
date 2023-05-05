@@ -2,6 +2,8 @@ package Finals;
 
 import java.awt.*;
 import java.awt.event.*;
+
+
 import javax.swing.*;
 
 public class RadixSortAnimation extends JFrame {
@@ -81,9 +83,7 @@ public class RadixSortAnimation extends JFrame {
 		getContentPane().setBackground(SystemColor.activeCaptionBorder);
         getContentPane().setLayout(null);
 		
-		
-		
-       
+        
         
         JLabel num1 = new JLabel("467");
         num1.setBackground(new Color(255, 255, 255));
@@ -447,6 +447,15 @@ public class RadixSortAnimation extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
         
+        
+        
+        int[] userInput = RadixPage1.values;
+        // update the labels with the input values from the first frame
+        num1.setText(Integer.toString(userInput[0]));
+        num2.setText(Integer.toString(userInput[1]));
+        num3.setText(Integer.toString(userInput[2]));
+        num4.setText(Integer.toString(userInput[3]));
+        num5.setText(Integer.toString(userInput[4]));
         
         sortButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
