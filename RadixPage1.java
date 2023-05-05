@@ -1,16 +1,7 @@
 package Finals;
 
 /* 
-current features:
-- base GUI
-- validation of user input
-- generates textboxes based on user input
-- sample animation
-
-to-do:
-- make some progress in the animation
-- validation of input for each generated textbox
-- functionality of the "Sort" button (to check inputs in textboxes; similar to the function of "Enter" button)
+FILE FOR USER INPUT
 */
 
 import java.awt.*;
