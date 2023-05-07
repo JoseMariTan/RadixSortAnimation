@@ -62,6 +62,8 @@ public class RadixPage1 extends JFrame {
         enterButton = new JButton("Enter");
         getContentPane().add(enterButton);
         enterButton.setBounds(545, 58, 71, 23);
+        enterButton.setBackground(Color.YELLOW);
+        enterButton.setFont(new Font("Helvetica", Font.BOLD, 12));
         				
         box2 = new JTextField(5);
         box2.setBounds(322, 59, 46, 20);
