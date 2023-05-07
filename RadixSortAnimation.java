@@ -60,256 +60,337 @@ public class RadixSortAnimation extends JFrame {
         Coords coords = new Coords();
         
         JLabel num1 = new JLabel("467");
-        num1.setBackground(new Color(255, 255, 255));
-        num1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num1.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num1.setHorizontalAlignment(JLabel.CENTER);
         num1.setBounds(347, 11, 33, 25);
         num1.setOpaque(true);
         num1.setBackground(Color.WHITE);
         getContentPane().add(num1);
         
         JLabel num4 = new JLabel("135");
-        num4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num4.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num4.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num4.setHorizontalAlignment(JLabel.CENTER);
         num4.setBounds(476, 11, 33, 25);
         num4.setOpaque(true);
         num4.setBackground(Color.WHITE);
         getContentPane().add(num4);
         
         JLabel num3 = new JLabel("703");
-        num3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num3.setHorizontalAlignment(JLabel.CENTER);
         num3.setBounds(433, 11, 33, 25);
         num3.setOpaque(true);
         num3.setBackground(Color.WHITE);
         getContentPane().add(num3);
         
         JLabel num5 = new JLabel("888");
-        num5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num5.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num5.setHorizontalAlignment(JLabel.CENTER);
         num5.setBounds(519, 11, 33, 25);
         num5.setOpaque(true);
         num5.setBackground(Color.WHITE);
         getContentPane().add(num5);
         
         JLabel num2 = new JLabel("221");
-        num2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num2.setHorizontalAlignment(JLabel.CENTER);
         num2.setBounds(390, 11, 33, 25);
         num2.setOpaque(true);
         num2.setBackground(Color.WHITE);
         getContentPane().add(num2);
         
         JLabel pass1 = new JLabel("Pass 1:");
-        pass1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1.setHorizontalAlignment(JLabel.CENTER);
         pass1.setBackground(Color.WHITE);
         pass1.setBounds(24, 68, 72, 25);
         getContentPane().add(pass1);
         
         JLabel pass2 = new JLabel("Pass 2:");
-        pass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2.setHorizontalAlignment(JLabel.CENTER);
         pass2.setBackground(Color.WHITE);
         pass2.setBounds(309, 104, 72, 25);
         getContentPane().add(pass2);
         
         JLabel pass3 = new JLabel("Pass 3:");
-        pass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3.setHorizontalAlignment(JLabel.CENTER);
         pass3.setBackground(Color.WHITE);
         pass3.setBounds(605, 140, 72, 25);
         getContentPane().add(pass3);
         
         JLabel pass1_2 = new JLabel("2:");
-        pass1_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_2.setHorizontalAlignment(JLabel.CENTER);
         pass1_2.setBackground(Color.WHITE);
         pass1_2.setBounds(78, 176, 18, 25);
         getContentPane().add(pass1_2);
         
         JLabel pass1_4 = new JLabel("4:");
-        pass1_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_4.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_4.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_4.setHorizontalAlignment(JLabel.CENTER);
         pass1_4.setBackground(Color.WHITE);
         pass1_4.setBounds(78, 248, 18, 25);
         getContentPane().add(pass1_4);
         
         JLabel pass1_5 = new JLabel("5:");
-        pass1_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_5.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_5.setHorizontalAlignment(JLabel.CENTER);
         pass1_5.setBackground(Color.WHITE);
         pass1_5.setBounds(78, 284, 18, 25);
         getContentPane().add(pass1_5);
         
         JLabel pass1_6 = new JLabel("6:");
-        pass1_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_6.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_6.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_6.setHorizontalAlignment(JLabel.CENTER);
         pass1_6.setBackground(Color.WHITE);
         pass1_6.setBounds(78, 320, 18, 25);
         getContentPane().add(pass1_6);
         
         JLabel pass1_7 = new JLabel("7:");
-        pass1_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_7.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_7.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_7.setHorizontalAlignment(JLabel.CENTER);
         pass1_7.setBackground(Color.WHITE);
         pass1_7.setBounds(78, 356, 18, 25);
         getContentPane().add(pass1_7);
         
         JLabel pass1_3 = new JLabel("3:");
-        pass1_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_3.setHorizontalAlignment(JLabel.CENTER);
         pass1_3.setBackground(Color.WHITE);
         pass1_3.setBounds(78, 212, 18, 25);
         getContentPane().add(pass1_3);
         
         JLabel pass1_1 = new JLabel("1:");
-        pass1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_1.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_1.setHorizontalAlignment(JLabel.CENTER);
         pass1_1.setBackground(Color.WHITE);
         pass1_1.setBounds(78, 140, 18, 25);
         getContentPane().add(pass1_1);
         
         JLabel pass1_0 = new JLabel("0:");
-        pass1_0.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_0.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_0.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_0.setHorizontalAlignment(JLabel.CENTER);
         pass1_0.setBackground(Color.WHITE);
         pass1_0.setBounds(78, 104, 18, 25);
         getContentPane().add(pass1_0);
         
         JLabel pass1_8 = new JLabel("8:");
-        pass1_8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_8.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_8.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_8.setHorizontalAlignment(JLabel.CENTER);
         pass1_8.setBackground(Color.WHITE);
         pass1_8.setBounds(78, 392, 18, 25);
         getContentPane().add(pass1_8);
         
         JLabel pass1_9 = new JLabel("9:");
-        pass1_9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_9.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass1_9.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1_9.setHorizontalAlignment(JLabel.CENTER);
         pass1_9.setBackground(Color.WHITE);
         pass1_9.setBounds(78, 428, 18, 25);
         getContentPane().add(pass1_9);
         
         JLabel pass2_2 = new JLabel("2:");
-        pass2_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_2.setHorizontalAlignment(JLabel.CENTER);
         pass2_2.setBackground(Color.WHITE);
         pass2_2.setBounds(364, 212, 18, 25);
         getContentPane().add(pass2_2);
         
         JLabel pass2_4 = new JLabel("4:");
-        pass2_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_4.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_4.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_4.setHorizontalAlignment(JLabel.CENTER);
         pass2_4.setBackground(Color.WHITE);
         pass2_4.setBounds(364, 284, 18, 25);
         getContentPane().add(pass2_4);
         
         JLabel pass2_5 = new JLabel("5:");
-        pass2_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_5.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_5.setHorizontalAlignment(JLabel.CENTER);
         pass2_5.setBackground(Color.WHITE);
         pass2_5.setBounds(364, 320, 18, 25);
         getContentPane().add(pass2_5);
         
         JLabel pass2_6 = new JLabel("6:");
-        pass2_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_6.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_6.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_6.setHorizontalAlignment(JLabel.CENTER);
         pass2_6.setBackground(Color.WHITE);
         pass2_6.setBounds(364, 356, 18, 25);
         getContentPane().add(pass2_6);
         
         JLabel pass2_7 = new JLabel("7:");
-        pass2_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_7.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_7.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_7.setHorizontalAlignment(JLabel.CENTER);
         pass2_7.setBackground(Color.WHITE);
         pass2_7.setBounds(364, 392, 18, 25);
         getContentPane().add(pass2_7);
         
         JLabel pass2_3 = new JLabel("3:");
-        pass2_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_3.setHorizontalAlignment(JLabel.CENTER);
         pass2_3.setBackground(Color.WHITE);
         pass2_3.setBounds(364, 248, 18, 25);
         getContentPane().add(pass2_3);
         
         JLabel pass2_1 = new JLabel("1:");
-        pass2_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_1.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_1.setHorizontalAlignment(JLabel.CENTER);
         pass2_1.setBackground(Color.WHITE);
         pass2_1.setBounds(364, 176, 18, 25);
         getContentPane().add(pass2_1);
         
         JLabel pass2_0 = new JLabel("0:");
-        pass2_0.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_0.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_0.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_0.setHorizontalAlignment(JLabel.CENTER);
         pass2_0.setBackground(Color.WHITE);
         pass2_0.setBounds(364, 140, 18, 25);
         getContentPane().add(pass2_0);
         
         JLabel pass2_8 = new JLabel("8:");
-        pass2_8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_8.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_8.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_8.setHorizontalAlignment(JLabel.CENTER);
         pass2_8.setBackground(Color.WHITE);
         pass2_8.setBounds(364, 428, 18, 25);
         getContentPane().add(pass2_8);
         
         JLabel pass2_9 = new JLabel("9:");
-        pass2_9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_9.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass2_9.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2_9.setHorizontalAlignment(JLabel.CENTER);
         pass2_9.setBackground(Color.WHITE);
         pass2_9.setBounds(364, 464, 18, 25);
         getContentPane().add(pass2_9);
         
         JLabel pass3_2 = new JLabel("2:");
-        pass3_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_2.setHorizontalAlignment(JLabel.CENTER);
         pass3_2.setBackground(Color.WHITE);
         pass3_2.setBounds(659, 248, 18, 25);
         getContentPane().add(pass3_2);
         
         JLabel pass3_4 = new JLabel("4:");
-        pass3_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_4.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_4.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_4.setHorizontalAlignment(JLabel.CENTER);
         pass3_4.setBackground(Color.WHITE);
         pass3_4.setBounds(659, 320, 18, 25);
         getContentPane().add(pass3_4);
         
         JLabel pass3_5 = new JLabel("5:");
-        pass3_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_5.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_5.setHorizontalAlignment(JLabel.CENTER);
         pass3_5.setBackground(Color.WHITE);
         pass3_5.setBounds(659, 356, 18, 25);
         getContentPane().add(pass3_5);
         
         JLabel pass3_6 = new JLabel("6:");
-        pass3_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_6.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_6.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_6.setHorizontalAlignment(JLabel.CENTER);
         pass3_6.setBackground(Color.WHITE);
         pass3_6.setBounds(659, 392, 18, 25);
         getContentPane().add(pass3_6);
         
         JLabel pass3_7 = new JLabel("7:");
-        pass3_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_7.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_7.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_7.setHorizontalAlignment(JLabel.CENTER);
         pass3_7.setBackground(Color.WHITE);
         pass3_7.setBounds(659, 428, 18, 25);
         getContentPane().add(pass3_7);
         
         JLabel pass3_3 = new JLabel("3:");
-        pass3_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_3.setHorizontalAlignment(JLabel.CENTER);
         pass3_3.setBackground(Color.WHITE);
         pass3_3.setBounds(659, 284, 18, 25);
         getContentPane().add(pass3_3);
         
         JLabel pass3_1 = new JLabel("1:");
-        pass3_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_1.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_1.setHorizontalAlignment(JLabel.CENTER);
         pass3_1.setBackground(Color.WHITE);
         pass3_1.setBounds(659, 212, 18, 25);
         getContentPane().add(pass3_1);
         
         JLabel pass3_0 = new JLabel("0:");
-        pass3_0.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_0.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_0.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_0.setHorizontalAlignment(JLabel.CENTER);
         pass3_0.setBackground(Color.WHITE);
         pass3_0.setBounds(659, 176, 18, 25);
         getContentPane().add(pass3_0);
         
         JLabel pass3_8 = new JLabel("8:");
-        pass3_8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_8.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_8.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_8.setHorizontalAlignment(JLabel.CENTER);
         pass3_8.setBackground(Color.WHITE);
         pass3_8.setBounds(659, 464, 18, 25);
         getContentPane().add(pass3_8);
         
         JLabel pass3_9 = new JLabel("9:");
-        pass3_9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_9.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        pass3_9.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3_9.setHorizontalAlignment(JLabel.CENTER);
         pass3_9.setBackground(Color.WHITE);
         pass3_9.setBounds(659, 500, 18, 25);
         getContentPane().add(pass3_9);
         
         JLabel num1pass2 = new JLabel("");
         num1pass2.setBackground(new Color(255, 255, 255));
-        num1pass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num1pass2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num1pass2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num1pass2.setHorizontalAlignment(JLabel.CENTER);
         num1pass2.setBounds(105, 68, 33, 25);
         getContentPane().add(num1pass2);
         num1pass2.setVisible(false);
         
         JLabel num2pass2 = new JLabel("");
         num2pass2.setBackground(new Color(255, 255, 255));
-        num2pass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num2pass2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num2pass2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num2pass2.setHorizontalAlignment(JLabel.CENTER);
         num2pass2.setBounds(148, 68, 33, 25);
         getContentPane().add(num2pass2);
         num2pass2.setVisible(false);
         
         JLabel num3pass2 = new JLabel("");
         num3pass2.setBackground(new Color(255, 255, 255));
-        num3pass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num3pass2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num3pass2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num3pass2.setHorizontalAlignment(JLabel.CENTER);
         num3pass2.setBounds(191, 68, 33, 25);
         getContentPane().add(num3pass2);
         num3pass2.setVisible(false);
@@ -317,7 +398,9 @@ public class RadixSortAnimation extends JFrame {
         JLabel num4pass2 = new JLabel("");
         num4pass2.setForeground(SystemColor.desktop);
         num4pass2.setBackground(new Color(255, 255, 255));
-        num4pass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num4pass2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num4pass2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num4pass2.setHorizontalAlignment(JLabel.CENTER);
         num4pass2.setBounds(234, 68, 33, 25);
         getContentPane().add(num4pass2);
         num4pass2.setVisible(false);
@@ -325,7 +408,9 @@ public class RadixSortAnimation extends JFrame {
         JLabel num5pass2 = new JLabel("");
         num5pass2.setForeground(SystemColor.desktop);
         num5pass2.setBackground(new Color(255, 255, 255));
-        num5pass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num5pass2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num5pass2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num5pass2.setHorizontalAlignment(JLabel.CENTER);
         num5pass2.setBounds(277, 68, 33, 25);
         getContentPane().add(num5pass2);
         num5pass2.setVisible(false);
@@ -333,7 +418,9 @@ public class RadixSortAnimation extends JFrame {
         JLabel num1pass3 = new JLabel("");
         num1pass3.setForeground(SystemColor.desktop);
         num1pass3.setBackground(new Color(255, 255, 255));
-        num1pass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num1pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num1pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num1pass3.setHorizontalAlignment(JLabel.CENTER);
         num1pass3.setBounds(390, 104, 33, 25);
         getContentPane().add(num1pass3);
         num1pass3.setVisible(false);
@@ -341,7 +428,9 @@ public class RadixSortAnimation extends JFrame {
         JLabel num2pass3 = new JLabel("");
         num2pass3.setForeground(SystemColor.desktop);
         num2pass3.setBackground(new Color(255, 255, 255));
-        num2pass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num2pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num2pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num2pass3.setHorizontalAlignment(JLabel.CENTER);
         num2pass3.setBounds(433, 104, 33, 25);
         getContentPane().add(num2pass3);
         num2pass3.setVisible(false);
@@ -349,7 +438,9 @@ public class RadixSortAnimation extends JFrame {
         JLabel num3pass3 = new JLabel("");
         num3pass3.setForeground(SystemColor.desktop);
         num3pass3.setBackground(new Color(255, 255, 255));
-        num3pass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num3pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num3pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num3pass3.setHorizontalAlignment(JLabel.CENTER);
         num3pass3.setBounds(476, 104, 33, 25);
         getContentPane().add(num3pass3);
         num3pass3.setVisible(false);
@@ -357,7 +448,9 @@ public class RadixSortAnimation extends JFrame {
         JLabel num4pass3 = new JLabel("");
         num4pass3.setForeground(SystemColor.desktop);
         num4pass3.setBackground(new Color(255, 255, 255));
-        num4pass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num4pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num4pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num4pass3.setHorizontalAlignment(JLabel.CENTER);
         num4pass3.setBounds(519, 104, 33, 25);
         getContentPane().add(num4pass3);
         num4pass3.setVisible(false);
@@ -365,7 +458,9 @@ public class RadixSortAnimation extends JFrame {
         JLabel num5pass3 = new JLabel("");
         num5pass3.setForeground(SystemColor.desktop);
         num5pass3.setBackground(new Color(255, 255, 255));
-        num5pass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        num5pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        num5pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        num5pass3.setHorizontalAlignment(JLabel.CENTER);
         num5pass3.setBounds(562, 104, 33, 25);
         getContentPane().add(num5pass3);
         num5pass3.setVisible(false);
@@ -373,7 +468,7 @@ public class RadixSortAnimation extends JFrame {
         JLabel sortedNum1 = new JLabel("");
         sortedNum1.setForeground(SystemColor.desktop);
         sortedNum1.setBackground(new Color(255, 255, 255));
-        sortedNum1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum1.setFont(new Font("Helvetica", Font.PLAIN, 20));
         sortedNum1.setBounds(687, 140, 33, 25);
         getContentPane().add(sortedNum1);
         sortedNum1.setVisible(false);
@@ -381,7 +476,7 @@ public class RadixSortAnimation extends JFrame {
         JLabel sortedNum2 = new JLabel("");
         sortedNum2.setForeground(SystemColor.desktop);
         sortedNum2.setBackground(new Color(255, 255, 255));
-        sortedNum2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum2.setFont(new Font("Helvetica", Font.PLAIN, 20));
         sortedNum2.setBounds(730, 140, 33, 25);
         getContentPane().add(sortedNum2);
         sortedNum2.setVisible(false);
@@ -389,7 +484,7 @@ public class RadixSortAnimation extends JFrame {
         JLabel sortedNum3 = new JLabel("");
         sortedNum3.setForeground(SystemColor.desktop);
         sortedNum3.setBackground(new Color(255, 255, 255));
-        sortedNum3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum3.setFont(new Font("Helvetica", Font.PLAIN, 20));
         sortedNum3.setBounds(773, 140, 33, 25);
         getContentPane().add(sortedNum3);
         sortedNum3.setVisible(false);
@@ -397,7 +492,7 @@ public class RadixSortAnimation extends JFrame {
         JLabel sortedNum4 = new JLabel("");
         sortedNum4.setForeground(SystemColor.desktop);
         sortedNum4.setBackground(new Color(255, 255, 255));
-        sortedNum4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum4.setFont(new Font("Helvetica", Font.PLAIN, 20));
         sortedNum4.setBounds(816, 140, 33, 25);
         getContentPane().add(sortedNum4);
         sortedNum4.setVisible(false);
@@ -405,13 +500,15 @@ public class RadixSortAnimation extends JFrame {
         JLabel sortedNum5 = new JLabel("");
         sortedNum5.setForeground(SystemColor.desktop);
         sortedNum5.setBackground(new Color(255, 255, 255));
-        sortedNum5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        sortedNum5.setFont(new Font("Helvetica", Font.PLAIN, 20));
         sortedNum5.setBounds(859, 140, 33, 25);
         getContentPane().add(sortedNum5);
         sortedNum5.setVisible(false);
         
         JButton sortButton = new JButton("Sort");
         sortButton.setBounds(562, 11, 90, 25);
+        sortButton.setBackground(Color.YELLOW);
+        sortedNum5.setFont(new Font("Helvetica", Font.BOLD, 20));
         getContentPane().add(sortButton);
 
         // Set the window properties
@@ -433,123 +530,183 @@ public class RadixSortAnimation extends JFrame {
         JSeparator separator = new JSeparator();
         separator.setBounds(106, 125, 193, 9);
         getContentPane().add(separator);
+        separator.setBackground(Color.BLACK);
+        separator.setForeground(Color.GRAY);
         
         JSeparator separator_1 = new JSeparator();
         separator_1.setBounds(106, 160, 193, 9);
         getContentPane().add(separator_1);
+        separator_1.setBackground(Color.BLACK);
+        separator_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1 = new JSeparator();
         separator_1_1.setBounds(106, 197, 193, 9);
         getContentPane().add(separator_1_1);
+        separator_1_1.setBackground(Color.BLACK);
+        separator_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_1 = new JSeparator();
         separator_1_1_1.setBounds(106, 233, 193, 9);
         getContentPane().add(separator_1_1_1);
+        separator_1_1_1.setBackground(Color.BLACK);
+        separator_1_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_2 = new JSeparator();
         separator_1_1_2.setBounds(106, 268, 193, 9);
         getContentPane().add(separator_1_1_2);
+        separator_1_1_2.setBackground(Color.BLACK);
+        separator_1_1_2.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_3 = new JSeparator();
         separator_1_1_3.setBounds(106, 304, 193, 9);
         getContentPane().add(separator_1_1_3);
+        separator_1_1_3.setBackground(Color.BLACK);
+        separator_1_1_3.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_4 = new JSeparator();
         separator_1_1_4.setBounds(106, 339, 193, 9);
         getContentPane().add(separator_1_1_4);
+        separator_1_1_4.setBackground(Color.BLACK);
+        separator_1_1_4.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_5 = new JSeparator();
         separator_1_1_5.setBounds(106, 376, 193, 9);
         getContentPane().add(separator_1_1_5);
+        separator_1_1_5.setBackground(Color.BLACK);
+        separator_1_1_5.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_6 = new JSeparator();
         separator_1_1_6.setBounds(106, 412, 193, 9);
         getContentPane().add(separator_1_1_6);
+        separator_1_1_6.setBackground(Color.BLACK);
+        separator_1_1_6.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7 = new JSeparator();
         separator_1_1_7.setBounds(106, 449, 193, 9);
         getContentPane().add(separator_1_1_7);
+        separator_1_1_7.setBackground(Color.BLACK);
+        separator_1_1_7.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1 = new JSeparator();
         separator_1_1_7_1.setBounds(390, 160, 199, 9);
         getContentPane().add(separator_1_1_7_1);
+        separator_1_1_7_1.setBackground(Color.BLACK);
+        separator_1_1_7_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_1 = new JSeparator();
         separator_1_1_7_1_1.setBounds(390, 197, 199, 9);
         getContentPane().add(separator_1_1_7_1_1);
+        separator_1_1_7_1_1.setBackground(Color.BLACK);
+        separator_1_1_7_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_2 = new JSeparator();
         separator_1_1_7_1_2.setBounds(390, 233, 199, 9);
         getContentPane().add(separator_1_1_7_1_2);
+        separator_1_1_7_1_2.setBackground(Color.BLACK);
+        separator_1_1_7_1_2.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_3 = new JSeparator();
         separator_1_1_7_1_3.setBounds(390, 268, 199, 9);
         getContentPane().add(separator_1_1_7_1_3);
+        separator_1_1_7_1_3.setBackground(Color.BLACK);
+        separator_1_1_7_1_3.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_4 = new JSeparator();
         separator_1_1_7_1_4.setBounds(390, 304, 199, 9);
         getContentPane().add(separator_1_1_7_1_4);
+        separator_1_1_7_1_4.setBackground(Color.BLACK);
+        separator_1_1_7_1_4.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_5 = new JSeparator();
         separator_1_1_7_1_5.setBounds(390, 339, 199, 9);
         getContentPane().add(separator_1_1_7_1_5);
+        separator_1_1_7_1_5.setBackground(Color.BLACK);
+        separator_1_1_7_1_5.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_6 = new JSeparator();
         separator_1_1_7_1_6.setBounds(390, 376, 199, 9);
         getContentPane().add(separator_1_1_7_1_6);
+        separator_1_1_7_1_6.setBackground(Color.BLACK);
+        separator_1_1_7_1_6.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_7 = new JSeparator();
         separator_1_1_7_1_7.setBounds(390, 412, 199, 9);
         getContentPane().add(separator_1_1_7_1_7);
+        separator_1_1_7_1_7.setBackground(Color.BLACK);
+        separator_1_1_7_1_7.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_8 = new JSeparator();
         separator_1_1_7_1_8.setBounds(390, 449, 199, 9);
         getContentPane().add(separator_1_1_7_1_8);
+        separator_1_1_7_1_8.setBackground(Color.BLACK);
+        separator_1_1_7_1_8.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9 = new JSeparator();
         separator_1_1_7_1_9.setBounds(390, 484, 199, 9);
         getContentPane().add(separator_1_1_7_1_9);
+        separator_1_1_7_1_9.setBackground(Color.BLACK);
+        separator_1_1_7_1_9.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1 = new JSeparator();
         separator_1_1_7_1_9_1.setBounds(687, 197, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1);
+        separator_1_1_7_1_9_1.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_1 = new JSeparator();
         separator_1_1_7_1_9_1_1.setBounds(687, 233, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_1);
+        separator_1_1_7_1_9_1_1.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_2 = new JSeparator();
         separator_1_1_7_1_9_1_2.setBounds(687, 268, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_2);
+        separator_1_1_7_1_9_1_2.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_2.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_3 = new JSeparator();
         separator_1_1_7_1_9_1_3.setBounds(687, 304, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_3);
+        separator_1_1_7_1_9_1_3.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_3.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_4 = new JSeparator();
         separator_1_1_7_1_9_1_4.setBounds(687, 339, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_4);
+        separator_1_1_7_1_9_1_4.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_4.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_5 = new JSeparator();
         separator_1_1_7_1_9_1_5.setBounds(687, 376, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_5);
+        separator_1_1_7_1_9_1_5.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_5.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_6 = new JSeparator();
         separator_1_1_7_1_9_1_6.setBounds(687, 412, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_6);
+        separator_1_1_7_1_9_1_6.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_6.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_7 = new JSeparator();
         separator_1_1_7_1_9_1_7.setBounds(687, 449, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_7);
+        separator_1_1_7_1_9_1_7.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_7.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_8 = new JSeparator();
         separator_1_1_7_1_9_1_8.setBounds(687, 484, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_8);
+        separator_1_1_7_1_9_1_8.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_8.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_9 = new JSeparator();
         separator_1_1_7_1_9_1_9.setBounds(687, 519, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_9);
-
+        separator_1_1_7_1_9_1_9.setBackground(Color.BLACK);
+        separator_1_1_7_1_9_1_9.setForeground(Color.GRAY);
+        
 	// creates a button that starts the sort animation.
         sortButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -1322,12 +1479,28 @@ public class RadixSortAnimation extends JFrame {
                                 sortedNum5.setVisible(true);
 				   
 				// SORTED ARRAY IS HIGHLIGHTED FOR CLARITY   
-				sortedNum1.setForeground(Color.RED);
+                                sortedNum1.setForeground(Color.RED);
                                 sortedNum2.setForeground(Color.RED);
                                 sortedNum3.setForeground(Color.RED);
                                 sortedNum4.setForeground(Color.RED);
                                 sortedNum5.setForeground(Color.RED);
                                 
+                // CREATE A WINDOW TO SHOW SORTED ARRAY
+                                JFrame sortedFrame = new JFrame("Radix Sorted Array");
+                                
+                                JLabel sortedLabel = new JLabel("The sorted array is: " + sortedNum1.getText() + ", "
+                               		 + sortedNum2.getText() + ", " + sortedNum3.getText() + ", " + sortedNum4.getText() + ", " + sortedNum5.getText());
+                                sortedLabel.setForeground(Color.BLACK);
+                                sortedLabel.setFont(new Font("Helvetica", Font.BOLD, 15));
+                                sortedLabel.setHorizontalAlignment(JLabel.CENTER);
+                                sortedFrame.getContentPane().add(sortedLabel);
+                                
+                                sortedFrame.setSize(500,200);
+                                sortedFrame.setForeground(Color.GRAY);
+                                sortedFrame.setLocationRelativeTo(null);
+                                sortedFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                                sortedFrame.setVisible(true);
+                           
                             }
                         }
                     }); 
