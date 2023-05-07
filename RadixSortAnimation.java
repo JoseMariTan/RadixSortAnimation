@@ -47,10 +47,16 @@ public class RadixSortAnimation extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	
+	// method to create the different labels used to visualize the radix sort animation.
+	// each label is an element of the array.
+	// each label has their respective coordiante (their position within the frame).
+	// each digits has their separators to avoid confusion.
+	
 	public RadixSortAnimation() {
 		getContentPane().setBackground(SystemColor.activeCaptionBorder);
         getContentPane().setLayout(null);
-		
+	
         Coords coords = new Coords();
         
         JLabel num1 = new JLabel("467");
@@ -544,11 +550,16 @@ public class RadixSortAnimation extends JFrame {
         separator_1_1_7_1_9_1_9.setBounds(687, 519, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_9);
 
+	// creates a button that starts the sort animation.
         sortButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+		    
+		 // ensures tha sorting button can only be pressed once
             	 sortButton.setEnabled(false);
             	 sortButton.setText("Sorting...");
- 
+		    
+ 		 // create an array that dictates the starting position of each Element.
+		 // makes changing the coordinates easier.
             	 int[] xCoordinates1 = {106, 148, 190, 232, 274};
             	 coords.setDesiredXp1n1(xCoordinates1[0]);
             	 coords.setDesiredXp1n2(xCoordinates1[1]);
@@ -557,6 +568,19 @@ public class RadixSortAnimation extends JFrame {
             	 coords.setDesiredXp1n5(xCoordinates1[4]);
          // PASS 1
             	 
+		 // The following are done done for each number, for each pass:
+		 // a new label is created for each element.
+		 // its x and y is taken, along with its height and width.
+		 // gets the respective digit: PASS 1 - ones digit, PASS 2 - tenths digit, PASS 3 - hundredths digit.
+		 	// if no timer is running, timer1 is started where:
+		    	// the digit is checked to identify its desired coordinates.
+		    	// the checked digit is highlighted for visual clarity.
+		    	// the desiredX and desiredY are the final coordinates of the label
+		    	// the "speed" variable sets how fast the label moves, which changes constantly.
+		    	// once the desired coordinates are met, the timer stops, and starts the the proceeding timer. 
+		    	// there are a total of 15 timers within the animation.
+		    	// The cycle continues until the array is sorted (up to PASS 3).
+		    
             	 JLabel newLabel1 = new JLabel(num1.getText());
                  newLabel1.setFont(num1.getFont());
                  newLabel1.setBounds(num1.getX(), num1.getY(), num1.getWidth(), num1.getHeight());
@@ -1289,12 +1313,21 @@ public class RadixSortAnimation extends JFrame {
                                 sortedNum3.setText(userInput[2]);
                                 sortedNum4.setText(userInput[3]);
                                 sortedNum5.setText(userInput[4]);
-
+				
+				// SORTED ARRAY IS MADE VISIBLE AFTER SORTING
                                 sortedNum1.setVisible(true);
                                 sortedNum2.setVisible(true);
                                 sortedNum3.setVisible(true);
                                 sortedNum4.setVisible(true);
                                 sortedNum5.setVisible(true);
+				   
+				// SORTED ARRAY IS HIGHLIGHTED FOR CLARITY   
+				sortedNum1.setForeground(Color.RED);
+                                sortedNum2.setForeground(Color.RED);
+                                sortedNum3.setForeground(Color.RED);
+                                sortedNum4.setForeground(Color.RED);
+                                sortedNum5.setForeground(Color.RED);
+                                
                             }
                         }
                     }); 
