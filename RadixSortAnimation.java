@@ -44,9 +44,6 @@ public class RadixSortAnimation extends JFrame {
 			}
 		});
 	}
-	
-	
-	
 	/**
 	 * Create the frame.
 	 */
@@ -92,203 +89,203 @@ public class RadixSortAnimation extends JFrame {
         num2.setBackground(Color.WHITE);
         getContentPane().add(num2);
         
-        JLabel lblPass = new JLabel("Pass 1:");
-        lblPass.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass.setBackground(Color.WHITE);
-        lblPass.setBounds(24, 68, 72, 25);
-        getContentPane().add(lblPass);
+        JLabel pass1 = new JLabel("Pass 1:");
+        pass1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1.setBackground(Color.WHITE);
+        pass1.setBounds(24, 68, 72, 25);
+        getContentPane().add(pass1);
         
-        JLabel lblPass_3 = new JLabel("Pass 2:");
-        lblPass_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_3.setBackground(Color.WHITE);
-        lblPass_3.setBounds(309, 104, 72, 25);
-        getContentPane().add(lblPass_3);
+        JLabel pass2 = new JLabel("Pass 2:");
+        pass2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2.setBackground(Color.WHITE);
+        pass2.setBounds(309, 104, 72, 25);
+        getContentPane().add(pass2);
         
-        JLabel lblPass_1 = new JLabel("Pass 3:");
-        lblPass_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_1.setBackground(Color.WHITE);
-        lblPass_1.setBounds(605, 140, 72, 25);
-        getContentPane().add(lblPass_1);
+        JLabel pass3 = new JLabel("Pass 3:");
+        pass3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3.setBackground(Color.WHITE);
+        pass3.setBounds(605, 140, 72, 25);
+        getContentPane().add(pass3);
         
-        JLabel lblPass_2 = new JLabel("2:");
-        lblPass_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2.setBackground(Color.WHITE);
-        lblPass_2.setBounds(78, 176, 18, 25);
-        getContentPane().add(lblPass_2);
+        JLabel pass1_2 = new JLabel("2:");
+        pass1_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_2.setBackground(Color.WHITE);
+        pass1_2.setBounds(78, 176, 18, 25);
+        getContentPane().add(pass1_2);
         
-        JLabel lblPass_2_1 = new JLabel("4:");
-        lblPass_2_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_1.setBackground(Color.WHITE);
-        lblPass_2_1.setBounds(78, 248, 18, 25);
-        getContentPane().add(lblPass_2_1);
+        JLabel pass1_4 = new JLabel("4:");
+        pass1_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_4.setBackground(Color.WHITE);
+        pass1_4.setBounds(78, 248, 18, 25);
+        getContentPane().add(pass1_4);
         
-        JLabel lblPass_2_2 = new JLabel("5:");
-        lblPass_2_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_2.setBackground(Color.WHITE);
-        lblPass_2_2.setBounds(78, 284, 18, 25);
-        getContentPane().add(lblPass_2_2);
+        JLabel pass1_5 = new JLabel("5:");
+        pass1_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_5.setBackground(Color.WHITE);
+        pass1_5.setBounds(78, 284, 18, 25);
+        getContentPane().add(pass1_5);
         
-        JLabel lblPass_2_3 = new JLabel("6:");
-        lblPass_2_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_3.setBackground(Color.WHITE);
-        lblPass_2_3.setBounds(78, 320, 18, 25);
-        getContentPane().add(lblPass_2_3);
+        JLabel pass1_6 = new JLabel("6:");
+        pass1_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_6.setBackground(Color.WHITE);
+        pass1_6.setBounds(78, 320, 18, 25);
+        getContentPane().add(pass1_6);
         
-        JLabel lblPass_2_4 = new JLabel("7:");
-        lblPass_2_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_4.setBackground(Color.WHITE);
-        lblPass_2_4.setBounds(78, 356, 18, 25);
-        getContentPane().add(lblPass_2_4);
+        JLabel pass1_7 = new JLabel("7:");
+        pass1_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_7.setBackground(Color.WHITE);
+        pass1_7.setBounds(78, 356, 18, 25);
+        getContentPane().add(pass1_7);
         
-        JLabel lblPass_2_5 = new JLabel("3:");
-        lblPass_2_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_5.setBackground(Color.WHITE);
-        lblPass_2_5.setBounds(78, 212, 18, 25);
-        getContentPane().add(lblPass_2_5);
+        JLabel pass1_3 = new JLabel("3:");
+        pass1_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_3.setBackground(Color.WHITE);
+        pass1_3.setBounds(78, 212, 18, 25);
+        getContentPane().add(pass1_3);
         
-        JLabel lblPass_2_6 = new JLabel("1:");
-        lblPass_2_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_6.setBackground(Color.WHITE);
-        lblPass_2_6.setBounds(78, 140, 18, 25);
-        getContentPane().add(lblPass_2_6);
+        JLabel pass1_1 = new JLabel("1:");
+        pass1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_1.setBackground(Color.WHITE);
+        pass1_1.setBounds(78, 140, 18, 25);
+        getContentPane().add(pass1_1);
         
-        JLabel lblPass_2_7 = new JLabel("0:");
-        lblPass_2_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_7.setBackground(Color.WHITE);
-        lblPass_2_7.setBounds(78, 104, 18, 25);
-        getContentPane().add(lblPass_2_7);
+        JLabel pass1_0 = new JLabel("0:");
+        pass1_0.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_0.setBackground(Color.WHITE);
+        pass1_0.setBounds(78, 104, 18, 25);
+        getContentPane().add(pass1_0);
         
-        JLabel lblPass_2_8 = new JLabel("8:");
-        lblPass_2_8.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_8.setBackground(Color.WHITE);
-        lblPass_2_8.setBounds(78, 392, 18, 25);
-        getContentPane().add(lblPass_2_8);
+        JLabel pass1_8 = new JLabel("8:");
+        pass1_8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_8.setBackground(Color.WHITE);
+        pass1_8.setBounds(78, 392, 18, 25);
+        getContentPane().add(pass1_8);
         
-        JLabel lblPass_2_8_1 = new JLabel("9:");
-        lblPass_2_8_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_8_1.setBackground(Color.WHITE);
-        lblPass_2_8_1.setBounds(78, 428, 18, 25);
-        getContentPane().add(lblPass_2_8_1);
+        JLabel pass1_9 = new JLabel("9:");
+        pass1_9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass1_9.setBackground(Color.WHITE);
+        pass1_9.setBounds(78, 428, 18, 25);
+        getContentPane().add(pass1_9);
         
-        JLabel lblPass_2_9 = new JLabel("2:");
-        lblPass_2_9.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_9.setBackground(Color.WHITE);
-        lblPass_2_9.setBounds(364, 212, 18, 25);
-        getContentPane().add(lblPass_2_9);
+        JLabel pass2_2 = new JLabel("2:");
+        pass2_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_2.setBackground(Color.WHITE);
+        pass2_2.setBounds(364, 212, 18, 25);
+        getContentPane().add(pass2_2);
         
-        JLabel lblPass_2_1_1 = new JLabel("4:");
-        lblPass_2_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_1_1.setBackground(Color.WHITE);
-        lblPass_2_1_1.setBounds(364, 284, 18, 25);
-        getContentPane().add(lblPass_2_1_1);
+        JLabel pass2_4 = new JLabel("4:");
+        pass2_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_4.setBackground(Color.WHITE);
+        pass2_4.setBounds(364, 284, 18, 25);
+        getContentPane().add(pass2_4);
         
-        JLabel lblPass_2_2_1 = new JLabel("5:");
-        lblPass_2_2_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_2_1.setBackground(Color.WHITE);
-        lblPass_2_2_1.setBounds(364, 320, 18, 25);
-        getContentPane().add(lblPass_2_2_1);
+        JLabel pass2_5 = new JLabel("5:");
+        pass2_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_5.setBackground(Color.WHITE);
+        pass2_5.setBounds(364, 320, 18, 25);
+        getContentPane().add(pass2_5);
         
-        JLabel lblPass_2_3_1 = new JLabel("6:");
-        lblPass_2_3_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_3_1.setBackground(Color.WHITE);
-        lblPass_2_3_1.setBounds(364, 356, 18, 25);
-        getContentPane().add(lblPass_2_3_1);
+        JLabel pass2_6 = new JLabel("6:");
+        pass2_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_6.setBackground(Color.WHITE);
+        pass2_6.setBounds(364, 356, 18, 25);
+        getContentPane().add(pass2_6);
         
-        JLabel lblPass_2_4_1 = new JLabel("7:");
-        lblPass_2_4_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_4_1.setBackground(Color.WHITE);
-        lblPass_2_4_1.setBounds(364, 392, 18, 25);
-        getContentPane().add(lblPass_2_4_1);
+        JLabel pass2_7 = new JLabel("7:");
+        pass2_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_7.setBackground(Color.WHITE);
+        pass2_7.setBounds(364, 392, 18, 25);
+        getContentPane().add(pass2_7);
         
-        JLabel lblPass_2_5_1 = new JLabel("3:");
-        lblPass_2_5_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_5_1.setBackground(Color.WHITE);
-        lblPass_2_5_1.setBounds(364, 248, 18, 25);
-        getContentPane().add(lblPass_2_5_1);
+        JLabel pass2_3 = new JLabel("3:");
+        pass2_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_3.setBackground(Color.WHITE);
+        pass2_3.setBounds(364, 248, 18, 25);
+        getContentPane().add(pass2_3);
         
-        JLabel lblPass_2_6_1 = new JLabel("1:");
-        lblPass_2_6_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_6_1.setBackground(Color.WHITE);
-        lblPass_2_6_1.setBounds(364, 176, 18, 25);
-        getContentPane().add(lblPass_2_6_1);
+        JLabel pass2_1 = new JLabel("1:");
+        pass2_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_1.setBackground(Color.WHITE);
+        pass2_1.setBounds(364, 176, 18, 25);
+        getContentPane().add(pass2_1);
         
-        JLabel lblPass_2_7_1 = new JLabel("0:");
-        lblPass_2_7_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_7_1.setBackground(Color.WHITE);
-        lblPass_2_7_1.setBounds(364, 140, 18, 25);
-        getContentPane().add(lblPass_2_7_1);
+        JLabel pass2_0 = new JLabel("0:");
+        pass2_0.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_0.setBackground(Color.WHITE);
+        pass2_0.setBounds(364, 140, 18, 25);
+        getContentPane().add(pass2_0);
         
-        JLabel lblPass_2_8_2 = new JLabel("8:");
-        lblPass_2_8_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_8_2.setBackground(Color.WHITE);
-        lblPass_2_8_2.setBounds(364, 428, 18, 25);
-        getContentPane().add(lblPass_2_8_2);
+        JLabel pass2_8 = new JLabel("8:");
+        pass2_8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_8.setBackground(Color.WHITE);
+        pass2_8.setBounds(364, 428, 18, 25);
+        getContentPane().add(pass2_8);
         
-        JLabel lblPass_2_8_1_1 = new JLabel("9:");
-        lblPass_2_8_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_8_1_1.setBackground(Color.WHITE);
-        lblPass_2_8_1_1.setBounds(364, 464, 18, 25);
-        getContentPane().add(lblPass_2_8_1_1);
+        JLabel pass2_9 = new JLabel("9:");
+        pass2_9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass2_9.setBackground(Color.WHITE);
+        pass2_9.setBounds(364, 464, 18, 25);
+        getContentPane().add(pass2_9);
         
-        JLabel lblPass_2_10 = new JLabel("2:");
-        lblPass_2_10.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_10.setBackground(Color.WHITE);
-        lblPass_2_10.setBounds(659, 248, 18, 25);
-        getContentPane().add(lblPass_2_10);
+        JLabel pass3_2 = new JLabel("2:");
+        pass3_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_2.setBackground(Color.WHITE);
+        pass3_2.setBounds(659, 248, 18, 25);
+        getContentPane().add(pass3_2);
         
-        JLabel lblPass_2_1_2 = new JLabel("4:");
-        lblPass_2_1_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_1_2.setBackground(Color.WHITE);
-        lblPass_2_1_2.setBounds(659, 320, 18, 25);
-        getContentPane().add(lblPass_2_1_2);
+        JLabel pass3_4 = new JLabel("4:");
+        pass3_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_4.setBackground(Color.WHITE);
+        pass3_4.setBounds(659, 320, 18, 25);
+        getContentPane().add(pass3_4);
         
-        JLabel lblPass_2_2_2 = new JLabel("5:");
-        lblPass_2_2_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_2_2.setBackground(Color.WHITE);
-        lblPass_2_2_2.setBounds(659, 356, 18, 25);
-        getContentPane().add(lblPass_2_2_2);
+        JLabel pass3_5 = new JLabel("5:");
+        pass3_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_5.setBackground(Color.WHITE);
+        pass3_5.setBounds(659, 356, 18, 25);
+        getContentPane().add(pass3_5);
         
-        JLabel lblPass_2_3_2 = new JLabel("6:");
-        lblPass_2_3_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_3_2.setBackground(Color.WHITE);
-        lblPass_2_3_2.setBounds(659, 392, 18, 25);
-        getContentPane().add(lblPass_2_3_2);
+        JLabel pass3_6 = new JLabel("6:");
+        pass3_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_6.setBackground(Color.WHITE);
+        pass3_6.setBounds(659, 392, 18, 25);
+        getContentPane().add(pass3_6);
         
-        JLabel lblPass_2_4_2 = new JLabel("7:");
-        lblPass_2_4_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_4_2.setBackground(Color.WHITE);
-        lblPass_2_4_2.setBounds(659, 428, 18, 25);
-        getContentPane().add(lblPass_2_4_2);
+        JLabel pass3_7 = new JLabel("7:");
+        pass3_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_7.setBackground(Color.WHITE);
+        pass3_7.setBounds(659, 428, 18, 25);
+        getContentPane().add(pass3_7);
         
-        JLabel lblPass_2_5_2 = new JLabel("3:");
-        lblPass_2_5_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_5_2.setBackground(Color.WHITE);
-        lblPass_2_5_2.setBounds(659, 284, 18, 25);
-        getContentPane().add(lblPass_2_5_2);
+        JLabel pass3_3 = new JLabel("3:");
+        pass3_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_3.setBackground(Color.WHITE);
+        pass3_3.setBounds(659, 284, 18, 25);
+        getContentPane().add(pass3_3);
         
-        JLabel lblPass_2_6_2 = new JLabel("1:");
-        lblPass_2_6_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_6_2.setBackground(Color.WHITE);
-        lblPass_2_6_2.setBounds(659, 212, 18, 25);
-        getContentPane().add(lblPass_2_6_2);
+        JLabel pass3_1 = new JLabel("1:");
+        pass3_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_1.setBackground(Color.WHITE);
+        pass3_1.setBounds(659, 212, 18, 25);
+        getContentPane().add(pass3_1);
         
-        JLabel lblPass_2_7_2 = new JLabel("0:");
-        lblPass_2_7_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_7_2.setBackground(Color.WHITE);
-        lblPass_2_7_2.setBounds(659, 176, 18, 25);
-        getContentPane().add(lblPass_2_7_2);
+        JLabel pass3_0 = new JLabel("0:");
+        pass3_0.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_0.setBackground(Color.WHITE);
+        pass3_0.setBounds(659, 176, 18, 25);
+        getContentPane().add(pass3_0);
         
-        JLabel lblPass_2_8_3 = new JLabel("8:");
-        lblPass_2_8_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_8_3.setBackground(Color.WHITE);
-        lblPass_2_8_3.setBounds(659, 464, 18, 25);
-        getContentPane().add(lblPass_2_8_3);
+        JLabel pass3_8 = new JLabel("8:");
+        pass3_8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_8.setBackground(Color.WHITE);
+        pass3_8.setBounds(659, 464, 18, 25);
+        getContentPane().add(pass3_8);
         
-        JLabel lblPass_2_8_1_1_1 = new JLabel("9:");
-        lblPass_2_8_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        lblPass_2_8_1_1_1.setBackground(Color.WHITE);
-        lblPass_2_8_1_1_1.setBounds(659, 500, 18, 25);
-        getContentPane().add(lblPass_2_8_1_1_1);
+        JLabel pass3_9 = new JLabel("9:");
+        pass3_9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        pass3_9.setBackground(Color.WHITE);
+        pass3_9.setBounds(659, 500, 18, 25);
+        getContentPane().add(pass3_9);
         
         JLabel num1pass2 = new JLabel("");
         num1pass2.setBackground(new Color(255, 255, 255));
@@ -417,7 +414,8 @@ public class RadixSortAnimation extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
-   
+        
+        //retrieve the string array from user input
         String[] userInput = RadixPage1.valuesB;
         // update the labels with the input values from the first frame
         num1.setText(userInput[0]);
@@ -425,12 +423,138 @@ public class RadixSortAnimation extends JFrame {
         num3.setText(userInput[2]);
         num4.setText(userInput[3]);
         num5.setText(userInput[4]);
+        
+        JSeparator separator = new JSeparator();
+        separator.setBounds(106, 125, 193, 9);
+        getContentPane().add(separator);
+        
+        JSeparator separator_1 = new JSeparator();
+        separator_1.setBounds(106, 160, 193, 9);
+        getContentPane().add(separator_1);
+        
+        JSeparator separator_1_1 = new JSeparator();
+        separator_1_1.setBounds(106, 197, 193, 9);
+        getContentPane().add(separator_1_1);
+        
+        JSeparator separator_1_1_1 = new JSeparator();
+        separator_1_1_1.setBounds(106, 233, 193, 9);
+        getContentPane().add(separator_1_1_1);
+        
+        JSeparator separator_1_1_2 = new JSeparator();
+        separator_1_1_2.setBounds(106, 268, 193, 9);
+        getContentPane().add(separator_1_1_2);
+        
+        JSeparator separator_1_1_3 = new JSeparator();
+        separator_1_1_3.setBounds(106, 304, 193, 9);
+        getContentPane().add(separator_1_1_3);
+        
+        JSeparator separator_1_1_4 = new JSeparator();
+        separator_1_1_4.setBounds(106, 339, 193, 9);
+        getContentPane().add(separator_1_1_4);
+        
+        JSeparator separator_1_1_5 = new JSeparator();
+        separator_1_1_5.setBounds(106, 376, 193, 9);
+        getContentPane().add(separator_1_1_5);
+        
+        JSeparator separator_1_1_6 = new JSeparator();
+        separator_1_1_6.setBounds(106, 412, 193, 9);
+        getContentPane().add(separator_1_1_6);
+        
+        JSeparator separator_1_1_7 = new JSeparator();
+        separator_1_1_7.setBounds(106, 449, 193, 9);
+        getContentPane().add(separator_1_1_7);
+        
+        JSeparator separator_1_1_7_1 = new JSeparator();
+        separator_1_1_7_1.setBounds(390, 160, 199, 9);
+        getContentPane().add(separator_1_1_7_1);
+        
+        JSeparator separator_1_1_7_1_1 = new JSeparator();
+        separator_1_1_7_1_1.setBounds(390, 197, 199, 9);
+        getContentPane().add(separator_1_1_7_1_1);
+        
+        JSeparator separator_1_1_7_1_2 = new JSeparator();
+        separator_1_1_7_1_2.setBounds(390, 233, 199, 9);
+        getContentPane().add(separator_1_1_7_1_2);
+        
+        JSeparator separator_1_1_7_1_3 = new JSeparator();
+        separator_1_1_7_1_3.setBounds(390, 268, 199, 9);
+        getContentPane().add(separator_1_1_7_1_3);
+        
+        JSeparator separator_1_1_7_1_4 = new JSeparator();
+        separator_1_1_7_1_4.setBounds(390, 304, 199, 9);
+        getContentPane().add(separator_1_1_7_1_4);
+        
+        JSeparator separator_1_1_7_1_5 = new JSeparator();
+        separator_1_1_7_1_5.setBounds(390, 339, 199, 9);
+        getContentPane().add(separator_1_1_7_1_5);
+        
+        JSeparator separator_1_1_7_1_6 = new JSeparator();
+        separator_1_1_7_1_6.setBounds(390, 376, 199, 9);
+        getContentPane().add(separator_1_1_7_1_6);
+        
+        JSeparator separator_1_1_7_1_7 = new JSeparator();
+        separator_1_1_7_1_7.setBounds(390, 412, 199, 9);
+        getContentPane().add(separator_1_1_7_1_7);
+        
+        JSeparator separator_1_1_7_1_8 = new JSeparator();
+        separator_1_1_7_1_8.setBounds(390, 449, 199, 9);
+        getContentPane().add(separator_1_1_7_1_8);
+        
+        JSeparator separator_1_1_7_1_9 = new JSeparator();
+        separator_1_1_7_1_9.setBounds(390, 484, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9);
+        
+        JSeparator separator_1_1_7_1_9_1 = new JSeparator();
+        separator_1_1_7_1_9_1.setBounds(687, 197, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1);
+        
+        JSeparator separator_1_1_7_1_9_1_1 = new JSeparator();
+        separator_1_1_7_1_9_1_1.setBounds(687, 233, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_1);
+        
+        JSeparator separator_1_1_7_1_9_1_2 = new JSeparator();
+        separator_1_1_7_1_9_1_2.setBounds(687, 268, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_2);
+        
+        JSeparator separator_1_1_7_1_9_1_3 = new JSeparator();
+        separator_1_1_7_1_9_1_3.setBounds(687, 304, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_3);
+        
+        JSeparator separator_1_1_7_1_9_1_4 = new JSeparator();
+        separator_1_1_7_1_9_1_4.setBounds(687, 339, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_4);
+        
+        JSeparator separator_1_1_7_1_9_1_5 = new JSeparator();
+        separator_1_1_7_1_9_1_5.setBounds(687, 376, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_5);
+        
+        JSeparator separator_1_1_7_1_9_1_6 = new JSeparator();
+        separator_1_1_7_1_9_1_6.setBounds(687, 412, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_6);
+        
+        JSeparator separator_1_1_7_1_9_1_7 = new JSeparator();
+        separator_1_1_7_1_9_1_7.setBounds(687, 449, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_7);
+        
+        JSeparator separator_1_1_7_1_9_1_8 = new JSeparator();
+        separator_1_1_7_1_9_1_8.setBounds(687, 484, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_8);
+        
+        JSeparator separator_1_1_7_1_9_1_9 = new JSeparator();
+        separator_1_1_7_1_9_1_9.setBounds(687, 519, 199, 9);
+        getContentPane().add(separator_1_1_7_1_9_1_9);
 
         sortButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             	 sortButton.setEnabled(false);
             	 sortButton.setText("Sorting...");
-
+ 
+            	 int[] xCoordinates1 = {106, 148, 190, 232, 274};
+            	 coords.setDesiredXp1n1(xCoordinates1[0]);
+            	 coords.setDesiredXp1n2(xCoordinates1[1]);
+            	 coords.setDesiredXp1n3(xCoordinates1[2]);
+            	 coords.setDesiredXp1n4(xCoordinates1[3]);
+            	 coords.setDesiredXp1n5(xCoordinates1[4]);
          // PASS 1
             	 
             	 JLabel newLabel1 = new JLabel(num1.getText());
@@ -447,7 +571,7 @@ public class RadixSortAnimation extends JFrame {
 
              	// start timer to move label to a specific position
                  if (timer1 == null || !timer1.isRunning()) {
-                	 coords.setDesiredX(106); // set desired x-coordinate
+
                      final int desiredY; // set desired y-coordinate
                      
                      int[] yValues = { 104, 140, 176, 212, 248, 284, 320, 356, 392, 428 };
@@ -472,13 +596,8 @@ public class RadixSortAnimation extends JFrame {
                         		    x -= speed; // move left
                         		}
                              num1.setLocation(x, y);
-                             if (x <= coords.getDesiredX() && y >= desiredY) {
+                             if (x <= coords.getDesiredXp1n1() && y >= desiredY) {
                                  timer1.stop(); // stop when label reaches desired position   
-                                 if (userInput[1].charAt(2) == userInput[0].charAt(2)) {
-                                     coords.setDesiredX(148);
-                                 } else {
-                                     coords.setDesiredX(106);
-                                 }
                                  timer2.start();
                              }
                          }
@@ -521,17 +640,8 @@ public class RadixSortAnimation extends JFrame {
                                 x -= speed; // move left
                             }
                             num2.setLocation(x, y);
-                            if (x <= coords.getDesiredX() && y >= desiredY) {
+                            if (x <= coords.getDesiredXp1n2() && y >= desiredY) {
                                 timer2.stop(); // stop when label reaches desired position
-                                if (userInput[2].charAt(2) == userInput[1].charAt(2)) {
-                                	coords.setDesiredX(190);
-                                }
-                                else if (userInput[2].charAt(2) == userInput[0].charAt(2)) {
-                                	coords.setDesiredX(190);
-                                }
-                                else {
-                                    coords.setDesiredX(106);
-                                }
                                 timer3.start(); 
                             }
                         }
@@ -574,20 +684,8 @@ public class RadixSortAnimation extends JFrame {
                                 x -= speed; // move left
                             }
                             num3.setLocation(x, y);
-                            if (x <= coords.getDesiredX() && y >= desiredY) {
+                            if (x <= coords.getDesiredXp1n3() && y >= desiredY) {
                                 timer3.stop(); // stop when label reaches desired position                                
-                                if (userInput[3].charAt(2) == userInput[2].charAt(2)) {
-                                	coords.setDesiredX(232);
-                                } 
-                                else if (userInput[3].charAt(2) == userInput[1].charAt(2)) {
-                                	coords.setDesiredX(232);
-                                }
-                                else if (userInput[3].charAt(2) == userInput[0].charAt(2)) {
-                                	coords.setDesiredX(232);
-                                }
-                                else {
-                                    coords.setDesiredX(106);
-                                }
                                 timer4.start();
                             }
                         }
@@ -629,27 +727,8 @@ public class RadixSortAnimation extends JFrame {
                                 x -= speed; // move left
                             }
                             num4.setLocation(x, y);
-                            if (x <= coords.getDesiredX() && y >= desiredY) {
+                            if (x <= coords.getDesiredXp1n4() && y >= desiredY) {
                                 timer4.stop(); // stop when label reaches desired position                               
-                                if (userInput[4].charAt(2) == userInput[3].charAt(2)) {
-                                	coords.setDesiredX(274);
-                                }
-                                else if (userInput[4].charAt(2) == userInput[2].charAt(2)) {
-                                	coords.setDesiredX(274);
-                                }
-                                else if (userInput[4].charAt(2) == userInput[1].charAt(2)) {
-                                	coords.setDesiredX(274);
-                                }
-                                else if (userInput[4].charAt(2) == userInput[0].charAt(2)) {
-                                	coords.setDesiredX(274);
-                                }
-                                else if (userInput[0].charAt(2) == userInput[1].charAt(2) && userInput[0].charAt(2) == userInput[2].charAt(2)
-                                        && userInput[0].charAt(2) == userInput[3].charAt(2) && userInput[0].charAt(2) == userInput[4].charAt(2)) {
-                                		coords.setDesiredX(274);
-                                }                                
-                                else {
-                                    coords.setDesiredX(106);
-                                }
                                 timer5.start();
                             }
                         }
@@ -692,7 +771,7 @@ public class RadixSortAnimation extends JFrame {
                                 x -= speed; // move left
                             }
                             num5.setLocation(x, y);
-                            if (x <= coords.getDesiredX() && y >= desiredY) {
+                            if (x <= coords.getDesiredXp1n5() && y >= desiredY) {
                                 timer5.stop(); // stop when label reaches desired 
                                 num1pass2.setVisible(true);
                                 num2pass2.setVisible(true);
@@ -722,7 +801,14 @@ public class RadixSortAnimation extends JFrame {
                 num3pass2.setText(userInput[2]);
                 num4pass2.setText(userInput[3]);
                 num5pass2.setText(userInput[4]);
-               
+                
+                int[] xCoordinates2 = {390, 432, 474, 516, 558};
+     	       	coords.setDesiredXp2n1(xCoordinates2[0]);
+     	       	coords.setDesiredXp2n2(xCoordinates2[1]);
+     	       	coords.setDesiredXp2n3(xCoordinates2[2]);
+     	       	coords.setDesiredXp2n4(xCoordinates2[3]);
+     	       	coords.setDesiredXp2n5(xCoordinates2[4]);
+                
                 JLabel newLabel6 = new JLabel(num1pass2.getText());
                 newLabel6.setFont(num1pass2.getFont());
                 newLabel6.setBounds(num1pass2.getX(), num1pass2.getY(), num1pass2.getWidth(), num1pass2.getHeight());
@@ -741,7 +827,6 @@ public class RadixSortAnimation extends JFrame {
                 
             	// start timer to move label to a specific position
                 if (timer6 == null || !timer6.isRunning()) {
-                	int DesiredX = 390; // set desired x-coordinate
                     final int desiredY; // set desired y-coordinate
                     
                     int[] yValues = { 140, 176, 212, 248, 284, 320, 356, 392, 428, 464 };
@@ -754,20 +839,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num1pass2.getX();
                         int y = num1pass2.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < DesiredX) {
+                            if (x < coords.getDesiredXp2n1()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num1pass2.setLocation(x, y);
-                            if (x >= DesiredX && y >= desiredY) {
+                            if (x >= coords.getDesiredXp2n1() && y >= desiredY) {
                                 timer6.stop(); // stop when label reaches desired position          
-                                if (userInput[1].charAt(1) == userInput[0].charAt(1)) {
-                                    coords.setDesiredX(432);
-                                } else {
-                                    coords.setDesiredX(390);
-                                }
                                 timer7.start();
                             }
                         }
@@ -802,24 +882,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num2pass2.getX();
                         int y = num2pass2.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp2n2()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num2pass2.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp2n2() && y >= desiredY) {
                                 timer7.stop(); // stop when label reaches desired position                                                              
-                                if (userInput[2].charAt(1) == userInput[1].charAt(1)) {
-                                    coords.setDesiredX(474);
-                                } 
-                                else if (userInput[2].charAt(1) == userInput[0].charAt(1)) {
-                                    coords.setDesiredX(474);
-                                } 
-                                else {
-                                    coords.setDesiredX(390);
-                                }
                                 timer8.start();
                             }
                         }
@@ -855,27 +926,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num3pass2.getX();
                         int y = num3pass2.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp2n3()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num3pass2.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp2n3() && y >= desiredY) {
                                 timer8.stop(); // stop when label reaches desired position         
-                                if (userInput[3].charAt(1) == userInput[2].charAt(1)) {
-                                    coords.setDesiredX(516);
-                                } 
-                                else if (userInput[3].charAt(1) == userInput[1].charAt(1)) {
-                                    coords.setDesiredX(516);
-                                }
-                                else if (userInput[3].charAt(1) == userInput[0].charAt(1)) {
-                                    coords.setDesiredX(516);
-                                }
-                                else {
-                                    coords.setDesiredX(390);
-                                }
                                 timer9.start();
                             }
                         }
@@ -911,34 +970,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num4pass2.getX();
                         int y = num4pass2.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp2n4()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num4pass2.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp2n4() && y >= desiredY) {
                                 timer9.stop(); // stop when label reaches desired position         
-                                if (userInput[4].charAt(1) == userInput[3].charAt(1)) {
-                                    coords.setDesiredX(558);
-                                } 
-                                else if (userInput[4].charAt(1) == userInput[2].charAt(1)) {
-                                    coords.setDesiredX(558);
-                                }
-                                else if (userInput[4].charAt(1) == userInput[1].charAt(1)) {
-                                    coords.setDesiredX(558);
-                                }
-                                else if (userInput[4].charAt(1) == userInput[0].charAt(1)) {
-                                    coords.setDesiredX(558);
-                                }
-                                else if (userInput[0].charAt(1) == userInput[1].charAt(1) && userInput[0].charAt(1) == userInput[2].charAt(1)
-                                        && userInput[0].charAt(1) == userInput[3].charAt(1) && userInput[0].charAt(1) == userInput[4].charAt(1)) {
-                                		coords.setDesiredX(558);
-                                } 
-                                else {
-                                    coords.setDesiredX(390);
-                                }
                                 timer10.start();
                             }
                         }
@@ -974,14 +1014,14 @@ public class RadixSortAnimation extends JFrame {
                         int x = num5pass2.getX();
                         int y = num5pass2.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp2n5()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num5pass2.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp2n5() && y >= desiredY) {
                                 timer10.stop(); // stop when label reaches desired position                                
                                 num1pass3.setVisible(true);
                                 num2pass3.setVisible(true);
@@ -993,7 +1033,7 @@ public class RadixSortAnimation extends JFrame {
                         }
                     });                   
                 }
-                 
+                
                 // PASS 3  
                 
                 // Sorting the array by ones digit from left to right
@@ -1010,6 +1050,13 @@ public class RadixSortAnimation extends JFrame {
                 num3pass3.setText(userInput[2]);
                 num4pass3.setText(userInput[3]);
                 num5pass3.setText(userInput[4]);
+                
+                int[] xCoordinates3 = {687, 729, 771, 813, 855};
+     	       	coords.setDesiredXp3n1(xCoordinates3[0]);
+     	       	coords.setDesiredXp3n2(xCoordinates3[1]);
+     	       	coords.setDesiredXp3n3(xCoordinates3[2]);
+     	       	coords.setDesiredXp3n4(xCoordinates3[3]);
+     	       	coords.setDesiredXp3n5(xCoordinates3[4]);
                 
                 JLabel newLabel11 = new JLabel(num1pass3.getText());
                 newLabel11.setFont(num1pass3.getFont());
@@ -1029,7 +1076,6 @@ public class RadixSortAnimation extends JFrame {
                 
             	// start timer to move label to a specific position
                 if (timer11 == null || !timer11.isRunning()) {
-                    int DesiredX = 687; // set desired x-coordinate
                     final int desiredY; // set desired y-coordinate
                     
                     int[] yValues = { 176, 212, 248, 284, 320, 356, 392, 428, 464, 500 };
@@ -1042,20 +1088,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num1pass3.getX();
                         int y = num1pass3.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < DesiredX) {
+                            if (x < coords.getDesiredXp3n1()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num1pass3.setLocation(x, y);
-                            if (x >= DesiredX && y >= desiredY) {
+                            if (x >= coords.getDesiredXp3n1() && y >= desiredY) {
                                 timer11.stop(); // stop when label reaches desired position
-                                if (userInput[1].charAt(0) == userInput[0].charAt(0)) {
-                                    coords.setDesiredX(729);
-                                } else {
-                                    coords.setDesiredX(687);
-                                }
                                 timer12.start();
                             }
                         }
@@ -1091,24 +1132,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num2pass3.getX();
                         int y = num2pass3.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp3n2()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num2pass3.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp3n2() && y >= desiredY) {
                                 timer12.stop(); // stop when label reaches desired position                                
-                                if (userInput[2].charAt(0) == userInput[1].charAt(0)) {
-                                    coords.setDesiredX(771);
-                                } 
-                                else if (userInput[2].charAt(0) == userInput[0].charAt(0)) {
-                                    coords.setDesiredX(771);
-                                }
-                                else {
-                                    coords.setDesiredX(687);
-                                }
                                 timer13.start();
                             }
                         }
@@ -1145,27 +1177,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num3pass3.getX();
                         int y = num3pass3.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp3n3()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num3pass3.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp3n3() && y >= desiredY) {
                                 timer13.stop(); // stop when label reaches desired position
-                                if (userInput[3].charAt(0) == userInput[2].charAt(0)) {
-                                    coords.setDesiredX(813);
-                                } 
-                                else if (userInput[3].charAt(0) == userInput[1].charAt(0)) {
-                                    coords.setDesiredX(813);
-                                }
-                                else if (userInput[3].charAt(0) == userInput[0].charAt(0)) {
-                                    coords.setDesiredX(813);
-                                }
-                                else {
-                                    coords.setDesiredX(687);
-                                }
                                 timer14.start();
                             }
                         }
@@ -1201,34 +1221,15 @@ public class RadixSortAnimation extends JFrame {
                         int x = num4pass3.getX();
                         int y = num4pass3.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp3n4()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num4pass3.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp3n4() && y >= desiredY) {
                                 timer14.stop(); // stop when label reaches desired position
-                                if (userInput[4].charAt(0) == userInput[3].charAt(0)) {
-                                    coords.setDesiredX(855);
-                                } 
-                                else if (userInput[4].charAt(0) == userInput[2].charAt(0)) {
-                                    coords.setDesiredX(855);
-                                }
-                                else if (userInput[4].charAt(0) == userInput[1].charAt(0)) {
-                                    coords.setDesiredX(855);
-                                }
-                                else if (userInput[4].charAt(0) == userInput[0].charAt(0)) {
-                                    coords.setDesiredX(855);
-                                }
-                                else if (userInput[0].charAt(0) == userInput[1].charAt(0) && userInput[0].charAt(0) == userInput[2].charAt(0)
-                                        && userInput[0].charAt(0) == userInput[3].charAt(0) && userInput[0].charAt(0) == userInput[4].charAt(0)) {
-                                		coords.setDesiredX(855);
-                                } 
-                                else {
-                                    coords.setDesiredX(687);
-                                }
                                 timer15.start();
                             }
                         }
@@ -1264,14 +1265,14 @@ public class RadixSortAnimation extends JFrame {
                         int x = num4pass3.getX();
                         int y = num4pass3.getY();
                         public void actionPerformed(ActionEvent e) {
-                            if (x < coords.getDesiredX()) {
+                            if (x < coords.getDesiredXp3n5()) {
                                 x += speed; // move to the right
                             }
                             if (y < desiredY) {
                                 y += speed; // move down
                             }
                             num5pass3.setLocation(x, y);
-                            if (x >= coords.getDesiredX() && y >= desiredY) {
+                            if (x >= coords.getDesiredXp3n5() && y >= desiredY) {
                                 timer15.stop(); // stop when label reaches desired position
                                 // Sorting the array by ones digit from left to right
                                 Arrays.sort(userInput, new Comparator<String>() {
@@ -1297,7 +1298,7 @@ public class RadixSortAnimation extends JFrame {
                             }
                         }
                     }); 
-                }  
+                }
             }
         });} 
 }
