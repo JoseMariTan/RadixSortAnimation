@@ -1,4 +1,4 @@
-package Finals;
+package radixanim;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -107,29 +107,31 @@ public class RadixSortAnimation extends JFrame {
         JLabel pass1 = new JLabel("Pass 1:");
         pass1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass1.setOpaque(true);
         pass1.setHorizontalAlignment(JLabel.CENTER);
-        pass1.setBackground(Color.WHITE);
+        pass1.setBackground(Color.YELLOW);
         pass1.setBounds(24, 68, 72, 25);
         getContentPane().add(pass1);
         
         JLabel pass2 = new JLabel("Pass 2:");
         pass2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass2.setOpaque(true);
         pass2.setHorizontalAlignment(JLabel.CENTER);
-        pass2.setBackground(Color.WHITE);
+        pass2.setBackground(Color.YELLOW);
         pass2.setBounds(309, 104, 72, 25);
         getContentPane().add(pass2);
         
         JLabel pass3 = new JLabel("Pass 3:");
         pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
+        pass3.setOpaque(true);
         pass3.setHorizontalAlignment(JLabel.CENTER);
-        pass3.setBackground(Color.WHITE);
+        pass3.setBackground(Color.YELLOW);
         pass3.setBounds(605, 140, 72, 25);
         getContentPane().add(pass3);
         
         JLabel pass1_2 = new JLabel("2:");
-        pass1_2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_2.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_2.setHorizontalAlignment(JLabel.CENTER);
         pass1_2.setBackground(Color.WHITE);
@@ -137,7 +139,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_2);
         
         JLabel pass1_4 = new JLabel("4:");
-        pass1_4.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_4.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_4.setHorizontalAlignment(JLabel.CENTER);
         pass1_4.setBackground(Color.WHITE);
@@ -145,7 +146,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_4);
         
         JLabel pass1_5 = new JLabel("5:");
-        pass1_5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_5.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_5.setHorizontalAlignment(JLabel.CENTER);
         pass1_5.setBackground(Color.WHITE);
@@ -153,7 +153,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_5);
         
         JLabel pass1_6 = new JLabel("6:");
-        pass1_6.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_6.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_6.setHorizontalAlignment(JLabel.CENTER);
         pass1_6.setBackground(Color.WHITE);
@@ -161,7 +160,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_6);
         
         JLabel pass1_7 = new JLabel("7:");
-        pass1_7.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_7.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_7.setHorizontalAlignment(JLabel.CENTER);
         pass1_7.setBackground(Color.WHITE);
@@ -169,7 +167,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_7);
         
         JLabel pass1_3 = new JLabel("3:");
-        pass1_3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_3.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_3.setHorizontalAlignment(JLabel.CENTER);
         pass1_3.setBackground(Color.WHITE);
@@ -177,7 +174,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_3);
         
         JLabel pass1_1 = new JLabel("1:");
-        pass1_1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_1.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_1.setHorizontalAlignment(JLabel.CENTER);
         pass1_1.setBackground(Color.WHITE);
@@ -185,7 +181,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_1);
         
         JLabel pass1_0 = new JLabel("0:");
-        pass1_0.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_0.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_0.setHorizontalAlignment(JLabel.CENTER);
         pass1_0.setBackground(Color.WHITE);
@@ -193,7 +188,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_0);
         
         JLabel pass1_8 = new JLabel("8:");
-        pass1_8.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_8.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_8.setHorizontalAlignment(JLabel.CENTER);
         pass1_8.setBackground(Color.WHITE);
@@ -201,7 +195,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_8);
         
         JLabel pass1_9 = new JLabel("9:");
-        pass1_9.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass1_9.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass1_9.setHorizontalAlignment(JLabel.CENTER);
         pass1_9.setBackground(Color.WHITE);
@@ -209,7 +202,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass1_9);
         
         JLabel pass2_2 = new JLabel("2:");
-        pass2_2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_2.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_2.setHorizontalAlignment(JLabel.CENTER);
         pass2_2.setBackground(Color.WHITE);
@@ -217,7 +209,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_2);
         
         JLabel pass2_4 = new JLabel("4:");
-        pass2_4.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_4.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_4.setHorizontalAlignment(JLabel.CENTER);
         pass2_4.setBackground(Color.WHITE);
@@ -225,7 +216,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_4);
         
         JLabel pass2_5 = new JLabel("5:");
-        pass2_5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_5.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_5.setHorizontalAlignment(JLabel.CENTER);
         pass2_5.setBackground(Color.WHITE);
@@ -233,7 +223,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_5);
         
         JLabel pass2_6 = new JLabel("6:");
-        pass2_6.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_6.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_6.setHorizontalAlignment(JLabel.CENTER);
         pass2_6.setBackground(Color.WHITE);
@@ -241,7 +230,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_6);
         
         JLabel pass2_7 = new JLabel("7:");
-        pass2_7.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_7.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_7.setHorizontalAlignment(JLabel.CENTER);
         pass2_7.setBackground(Color.WHITE);
@@ -249,7 +237,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_7);
         
         JLabel pass2_3 = new JLabel("3:");
-        pass2_3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_3.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_3.setHorizontalAlignment(JLabel.CENTER);
         pass2_3.setBackground(Color.WHITE);
@@ -257,7 +244,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_3);
         
         JLabel pass2_1 = new JLabel("1:");
-        pass2_1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_1.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_1.setHorizontalAlignment(JLabel.CENTER);
         pass2_1.setBackground(Color.WHITE);
@@ -265,7 +251,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_1);
         
         JLabel pass2_0 = new JLabel("0:");
-        pass2_0.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_0.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_0.setHorizontalAlignment(JLabel.CENTER);
         pass2_0.setBackground(Color.WHITE);
@@ -273,7 +258,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_0);
         
         JLabel pass2_8 = new JLabel("8:");
-        pass2_8.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_8.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_8.setHorizontalAlignment(JLabel.CENTER);
         pass2_8.setBackground(Color.WHITE);
@@ -281,7 +265,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_8);
         
         JLabel pass2_9 = new JLabel("9:");
-        pass2_9.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass2_9.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass2_9.setHorizontalAlignment(JLabel.CENTER);
         pass2_9.setBackground(Color.WHITE);
@@ -289,7 +272,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass2_9);
         
         JLabel pass3_2 = new JLabel("2:");
-        pass3_2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_2.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_2.setHorizontalAlignment(JLabel.CENTER);
         pass3_2.setBackground(Color.WHITE);
@@ -297,7 +279,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_2);
         
         JLabel pass3_4 = new JLabel("4:");
-        pass3_4.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_4.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_4.setHorizontalAlignment(JLabel.CENTER);
         pass3_4.setBackground(Color.WHITE);
@@ -305,7 +286,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_4);
         
         JLabel pass3_5 = new JLabel("5:");
-        pass3_5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_5.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_5.setHorizontalAlignment(JLabel.CENTER);
         pass3_5.setBackground(Color.WHITE);
@@ -313,7 +293,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_5);
         
         JLabel pass3_6 = new JLabel("6:");
-        pass3_6.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_6.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_6.setHorizontalAlignment(JLabel.CENTER);
         pass3_6.setBackground(Color.WHITE);
@@ -321,7 +300,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_6);
         
         JLabel pass3_7 = new JLabel("7:");
-        pass3_7.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_7.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_7.setHorizontalAlignment(JLabel.CENTER);
         pass3_7.setBackground(Color.WHITE);
@@ -329,7 +307,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_7);
         
         JLabel pass3_3 = new JLabel("3:");
-        pass3_3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_3.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_3.setHorizontalAlignment(JLabel.CENTER);
         pass3_3.setBackground(Color.WHITE);
@@ -337,7 +314,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_3);
         
         JLabel pass3_1 = new JLabel("1:");
-        pass3_1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_1.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_1.setHorizontalAlignment(JLabel.CENTER);
         pass3_1.setBackground(Color.WHITE);
@@ -345,7 +321,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_1);
         
         JLabel pass3_0 = new JLabel("0:");
-        pass3_0.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_0.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_0.setHorizontalAlignment(JLabel.CENTER);
         pass3_0.setBackground(Color.WHITE);
@@ -353,7 +328,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_0);
         
         JLabel pass3_8 = new JLabel("8:");
-        pass3_8.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_8.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_8.setHorizontalAlignment(JLabel.CENTER);
         pass3_8.setBackground(Color.WHITE);
@@ -361,7 +335,6 @@ public class RadixSortAnimation extends JFrame {
         getContentPane().add(pass3_8);
         
         JLabel pass3_9 = new JLabel("9:");
-        pass3_9.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         pass3_9.setFont(new Font("Helvetica", Font.BOLD, 15));
         pass3_9.setHorizontalAlignment(JLabel.CENTER);
         pass3_9.setBackground(Color.WHITE);
@@ -1487,16 +1460,16 @@ public class RadixSortAnimation extends JFrame {
                                 
                 // CREATE A WINDOW TO SHOW SORTED ARRAY
                                 JFrame sortedFrame = new JFrame("Radix Sorted Array");
-                                
-                                JLabel sortedLabel = new JLabel("The sorted array is: " + sortedNum1.getText() + ", "
-                               		 + sortedNum2.getText() + ", " + sortedNum3.getText() + ", " + sortedNum4.getText() + ", " + sortedNum5.getText());
+                                JLabel sortedLabel = new JLabel("<html><b>The sorted array is: </b>" + sortedNum1.getText() + ", "
+                               		 + sortedNum2.getText() + ", " + sortedNum3.getText() + ", " + sortedNum4.getText() + ", " + sortedNum5.getText() + "</html>");
                                 sortedLabel.setForeground(Color.BLACK);
-                                sortedLabel.setFont(new Font("Helvetica", Font.BOLD, 15));
+                                sortedLabel.setFont(new Font("Helvetica", Font.PLAIN, 15));
                                 sortedLabel.setHorizontalAlignment(JLabel.CENTER);
                                 sortedFrame.getContentPane().add(sortedLabel);
                                 
                                 sortedFrame.setSize(500,200);
-                                sortedFrame.setForeground(Color.GRAY);
+                                sortedFrame.getContentPane().setBackground(SystemColor.activeCaptionBorder);
+                                sortedFrame.setBackground(Color.GRAY);
                                 sortedFrame.setLocationRelativeTo(null);
                                 sortedFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                                 sortedFrame.setVisible(true);
