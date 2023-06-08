@@ -1,4 +1,4 @@
-package radixanim;
+package Finals;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -50,7 +50,7 @@ public class RadixSortAnimation extends JFrame {
 	
 	// method to create the different labels used to visualize the radix sort animation.
 	// each label is an element of the array.
-	// each label has their respective coordiante (their position within the frame).
+	// each label has their respective coordinate (their position within the frame).
 	// each digits has their separators to avoid confusion.
 	
 	public RadixSortAnimation() {
@@ -431,57 +431,63 @@ public class RadixSortAnimation extends JFrame {
         JLabel num5pass3 = new JLabel("");
         num5pass3.setForeground(SystemColor.desktop);
         num5pass3.setBackground(new Color(255, 255, 255));
+        
         num5pass3.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         num5pass3.setFont(new Font("Helvetica", Font.BOLD, 15));
         num5pass3.setHorizontalAlignment(JLabel.CENTER);
+        
         num5pass3.setBounds(562, 104, 33, 25);
         getContentPane().add(num5pass3);
         num5pass3.setVisible(false);
         
         JLabel sortedNum1 = new JLabel("");
-        sortedNum1.setForeground(SystemColor.desktop);
+        sortedNum1.setForeground(Color.DARK_GRAY);
         sortedNum1.setBackground(new Color(255, 255, 255));
-        sortedNum1.setFont(new Font("Helvetica", Font.PLAIN, 20));
+        sortedNum1.setFont(new Font("SansSerif", Font.BOLD, 15));      
+        sortedNum1.setHorizontalAlignment(JLabel.CENTER);
         sortedNum1.setBounds(687, 140, 33, 25);
         getContentPane().add(sortedNum1);
         sortedNum1.setVisible(false);
-        
+
         JLabel sortedNum2 = new JLabel("");
-        sortedNum2.setForeground(SystemColor.desktop);
+        sortedNum2.setForeground(Color.DARK_GRAY);
         sortedNum2.setBackground(new Color(255, 255, 255));
-        sortedNum2.setFont(new Font("Helvetica", Font.PLAIN, 20));
+        sortedNum2.setFont(new Font("Helvetica", Font.BOLD, 15));      
+        sortedNum2.setHorizontalAlignment(JLabel.CENTER);
         sortedNum2.setBounds(730, 140, 33, 25);
         getContentPane().add(sortedNum2);
         sortedNum2.setVisible(false);
         
         JLabel sortedNum3 = new JLabel("");
-        sortedNum3.setForeground(SystemColor.desktop);
+        sortedNum3.setForeground(Color.DARK_GRAY);
         sortedNum3.setBackground(new Color(255, 255, 255));
-        sortedNum3.setFont(new Font("Helvetica", Font.PLAIN, 20));
+        sortedNum3.setFont(new Font("Helvetica", Font.BOLD, 15));      
+        sortedNum3.setHorizontalAlignment(JLabel.CENTER);
         sortedNum3.setBounds(773, 140, 33, 25);
         getContentPane().add(sortedNum3);
         sortedNum3.setVisible(false);
         
         JLabel sortedNum4 = new JLabel("");
-        sortedNum4.setForeground(SystemColor.desktop);
+        sortedNum4.setForeground(Color.DARK_GRAY);
         sortedNum4.setBackground(new Color(255, 255, 255));
-        sortedNum4.setFont(new Font("Helvetica", Font.PLAIN, 20));
-        sortedNum4.setBounds(816, 140, 33, 25);
+        sortedNum4.setFont(new Font("Helvetica", Font.BOLD, 15));      
+        sortedNum4.setHorizontalAlignment(JLabel.CENTER);
+        sortedNum4.setBounds(814, 140, 33, 25);
         getContentPane().add(sortedNum4);
         sortedNum4.setVisible(false);
         
         JLabel sortedNum5 = new JLabel("");
-        sortedNum5.setForeground(SystemColor.desktop);
+        sortedNum5.setForeground(Color.DARK_GRAY);
         sortedNum5.setBackground(new Color(255, 255, 255));
-        sortedNum5.setFont(new Font("Helvetica", Font.PLAIN, 20));
-        sortedNum5.setBounds(859, 140, 33, 25);
+        sortedNum5.setFont(new Font("Helvetica", Font.BOLD, 15));      
+        sortedNum5.setHorizontalAlignment(JLabel.CENTER);
+        sortedNum5.setBounds(856, 140, 33, 25);
         getContentPane().add(sortedNum5);
         sortedNum5.setVisible(false);
         
         JButton sortButton = new JButton("Sort");
         sortButton.setBounds(562, 11, 90, 25);
         sortButton.setBackground(Color.YELLOW);
-        sortedNum5.setFont(new Font("Helvetica", Font.BOLD, 20));
         getContentPane().add(sortButton);
 
         // Set the window properties
@@ -501,181 +507,181 @@ public class RadixSortAnimation extends JFrame {
         num5.setText(userInput[4]);
         
         JSeparator separator = new JSeparator();
-        separator.setBounds(106, 125, 193, 9);
+        separator.setBounds(106, 115, 193, 9);
         getContentPane().add(separator);
         separator.setBackground(Color.BLACK);
         separator.setForeground(Color.GRAY);
         
         JSeparator separator_1 = new JSeparator();
-        separator_1.setBounds(106, 160, 193, 9);
+        separator_1.setBounds(106, 150, 193, 9);
         getContentPane().add(separator_1);
         separator_1.setBackground(Color.BLACK);
         separator_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1 = new JSeparator();
-        separator_1_1.setBounds(106, 197, 193, 9);
+        separator_1_1.setBounds(106, 187, 193, 9);
         getContentPane().add(separator_1_1);
         separator_1_1.setBackground(Color.BLACK);
         separator_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_1 = new JSeparator();
-        separator_1_1_1.setBounds(106, 233, 193, 9);
+        separator_1_1_1.setBounds(106, 223, 193, 9);
         getContentPane().add(separator_1_1_1);
         separator_1_1_1.setBackground(Color.BLACK);
         separator_1_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_2 = new JSeparator();
-        separator_1_1_2.setBounds(106, 268, 193, 9);
+        separator_1_1_2.setBounds(106, 258, 193, 9);
         getContentPane().add(separator_1_1_2);
         separator_1_1_2.setBackground(Color.BLACK);
         separator_1_1_2.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_3 = new JSeparator();
-        separator_1_1_3.setBounds(106, 304, 193, 9);
+        separator_1_1_3.setBounds(106, 294, 193, 9);
         getContentPane().add(separator_1_1_3);
         separator_1_1_3.setBackground(Color.BLACK);
         separator_1_1_3.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_4 = new JSeparator();
-        separator_1_1_4.setBounds(106, 339, 193, 9);
+        separator_1_1_4.setBounds(106, 329, 193, 9);
         getContentPane().add(separator_1_1_4);
         separator_1_1_4.setBackground(Color.BLACK);
         separator_1_1_4.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_5 = new JSeparator();
-        separator_1_1_5.setBounds(106, 376, 193, 9);
+        separator_1_1_5.setBounds(106, 366, 193, 9);
         getContentPane().add(separator_1_1_5);
         separator_1_1_5.setBackground(Color.BLACK);
         separator_1_1_5.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_6 = new JSeparator();
-        separator_1_1_6.setBounds(106, 412, 193, 9);
+        separator_1_1_6.setBounds(106, 402, 193, 9);
         getContentPane().add(separator_1_1_6);
         separator_1_1_6.setBackground(Color.BLACK);
         separator_1_1_6.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7 = new JSeparator();
-        separator_1_1_7.setBounds(106, 449, 193, 9);
+        separator_1_1_7.setBounds(106, 439, 193, 9);
         getContentPane().add(separator_1_1_7);
         separator_1_1_7.setBackground(Color.BLACK);
         separator_1_1_7.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1 = new JSeparator();
-        separator_1_1_7_1.setBounds(390, 160, 199, 9);
+        separator_1_1_7_1.setBounds(390, 150, 199, 9);
         getContentPane().add(separator_1_1_7_1);
         separator_1_1_7_1.setBackground(Color.BLACK);
         separator_1_1_7_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_1 = new JSeparator();
-        separator_1_1_7_1_1.setBounds(390, 197, 199, 9);
+        separator_1_1_7_1_1.setBounds(390, 187, 199, 9);
         getContentPane().add(separator_1_1_7_1_1);
         separator_1_1_7_1_1.setBackground(Color.BLACK);
         separator_1_1_7_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_2 = new JSeparator();
-        separator_1_1_7_1_2.setBounds(390, 233, 199, 9);
+        separator_1_1_7_1_2.setBounds(390, 223, 199, 9);
         getContentPane().add(separator_1_1_7_1_2);
         separator_1_1_7_1_2.setBackground(Color.BLACK);
         separator_1_1_7_1_2.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_3 = new JSeparator();
-        separator_1_1_7_1_3.setBounds(390, 268, 199, 9);
+        separator_1_1_7_1_3.setBounds(390, 258, 199, 9);
         getContentPane().add(separator_1_1_7_1_3);
         separator_1_1_7_1_3.setBackground(Color.BLACK);
         separator_1_1_7_1_3.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_4 = new JSeparator();
-        separator_1_1_7_1_4.setBounds(390, 304, 199, 9);
+        separator_1_1_7_1_4.setBounds(390, 294, 199, 9);
         getContentPane().add(separator_1_1_7_1_4);
         separator_1_1_7_1_4.setBackground(Color.BLACK);
         separator_1_1_7_1_4.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_5 = new JSeparator();
-        separator_1_1_7_1_5.setBounds(390, 339, 199, 9);
+        separator_1_1_7_1_5.setBounds(390, 329, 199, 9);
         getContentPane().add(separator_1_1_7_1_5);
         separator_1_1_7_1_5.setBackground(Color.BLACK);
         separator_1_1_7_1_5.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_6 = new JSeparator();
-        separator_1_1_7_1_6.setBounds(390, 376, 199, 9);
+        separator_1_1_7_1_6.setBounds(390, 366, 199, 9);
         getContentPane().add(separator_1_1_7_1_6);
         separator_1_1_7_1_6.setBackground(Color.BLACK);
         separator_1_1_7_1_6.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_7 = new JSeparator();
-        separator_1_1_7_1_7.setBounds(390, 412, 199, 9);
+        separator_1_1_7_1_7.setBounds(390, 402, 199, 9);
         getContentPane().add(separator_1_1_7_1_7);
         separator_1_1_7_1_7.setBackground(Color.BLACK);
         separator_1_1_7_1_7.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_8 = new JSeparator();
-        separator_1_1_7_1_8.setBounds(390, 449, 199, 9);
+        separator_1_1_7_1_8.setBounds(390, 439, 199, 9);
         getContentPane().add(separator_1_1_7_1_8);
         separator_1_1_7_1_8.setBackground(Color.BLACK);
         separator_1_1_7_1_8.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9 = new JSeparator();
-        separator_1_1_7_1_9.setBounds(390, 484, 199, 9);
+        separator_1_1_7_1_9.setBounds(390, 474, 199, 9);
         getContentPane().add(separator_1_1_7_1_9);
         separator_1_1_7_1_9.setBackground(Color.BLACK);
         separator_1_1_7_1_9.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1 = new JSeparator();
-        separator_1_1_7_1_9_1.setBounds(687, 197, 199, 9);
+        separator_1_1_7_1_9_1.setBounds(687, 187, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1);
         separator_1_1_7_1_9_1.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_1 = new JSeparator();
-        separator_1_1_7_1_9_1_1.setBounds(687, 233, 199, 9);
+        separator_1_1_7_1_9_1_1.setBounds(687, 223, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_1);
         separator_1_1_7_1_9_1_1.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_1.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_2 = new JSeparator();
-        separator_1_1_7_1_9_1_2.setBounds(687, 268, 199, 9);
+        separator_1_1_7_1_9_1_2.setBounds(687, 258, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_2);
         separator_1_1_7_1_9_1_2.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_2.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_3 = new JSeparator();
-        separator_1_1_7_1_9_1_3.setBounds(687, 304, 199, 9);
+        separator_1_1_7_1_9_1_3.setBounds(687, 294, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_3);
         separator_1_1_7_1_9_1_3.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_3.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_4 = new JSeparator();
-        separator_1_1_7_1_9_1_4.setBounds(687, 339, 199, 9);
+        separator_1_1_7_1_9_1_4.setBounds(687, 329, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_4);
         separator_1_1_7_1_9_1_4.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_4.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_5 = new JSeparator();
-        separator_1_1_7_1_9_1_5.setBounds(687, 376, 199, 9);
+        separator_1_1_7_1_9_1_5.setBounds(687, 366, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_5);
         separator_1_1_7_1_9_1_5.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_5.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_6 = new JSeparator();
-        separator_1_1_7_1_9_1_6.setBounds(687, 412, 199, 9);
+        separator_1_1_7_1_9_1_6.setBounds(687, 402, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_6);
         separator_1_1_7_1_9_1_6.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_6.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_7 = new JSeparator();
-        separator_1_1_7_1_9_1_7.setBounds(687, 449, 199, 9);
+        separator_1_1_7_1_9_1_7.setBounds(687, 439, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_7);
         separator_1_1_7_1_9_1_7.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_7.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_8 = new JSeparator();
-        separator_1_1_7_1_9_1_8.setBounds(687, 484, 199, 9);
+        separator_1_1_7_1_9_1_8.setBounds(687, 474, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_8);
         separator_1_1_7_1_9_1_8.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_8.setForeground(Color.GRAY);
         
         JSeparator separator_1_1_7_1_9_1_9 = new JSeparator();
-        separator_1_1_7_1_9_1_9.setBounds(687, 519, 199, 9);
+        separator_1_1_7_1_9_1_9.setBounds(687, 509, 199, 9);
         getContentPane().add(separator_1_1_7_1_9_1_9);
         separator_1_1_7_1_9_1_9.setBackground(Color.BLACK);
         separator_1_1_7_1_9_1_9.setForeground(Color.GRAY);
@@ -684,7 +690,7 @@ public class RadixSortAnimation extends JFrame {
         sortButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 		    
-		 // ensures tha sorting button can only be pressed once
+		 // ensures the sorting button can only be pressed once
             	 sortButton.setEnabled(false);
             	 sortButton.setText("Sorting...");
 		    
@@ -1451,16 +1457,11 @@ public class RadixSortAnimation extends JFrame {
                                 sortedNum4.setVisible(true);
                                 sortedNum5.setVisible(true);
 				   
-				// SORTED ARRAY IS HIGHLIGHTED FOR CLARITY   
-                                sortedNum1.setForeground(Color.RED);
-                                sortedNum2.setForeground(Color.RED);
-                                sortedNum3.setForeground(Color.RED);
-                                sortedNum4.setForeground(Color.RED);
-                                sortedNum5.setForeground(Color.RED);
+
                                 
                 // CREATE A WINDOW TO SHOW SORTED ARRAY
                                 JFrame sortedFrame = new JFrame("Radix Sorted Array");
-                                JLabel sortedLabel = new JLabel("<html><b>The sorted array is: </b>" + sortedNum1.getText() + ", "
+                                JLabel sortedLabel = new JLabel("<html><b>Sorted Values: </b>" + sortedNum1.getText() + ", "
                                		 + sortedNum2.getText() + ", " + sortedNum3.getText() + ", " + sortedNum4.getText() + ", " + sortedNum5.getText() + "</html>");
                                 sortedLabel.setForeground(Color.BLACK);
                                 sortedLabel.setFont(new Font("Helvetica", Font.PLAIN, 15));
