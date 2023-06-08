@@ -110,12 +110,15 @@ public class RadixPage1 extends JFrame {
                             valuesA[2] = Integer.parseInt(text3);
                             valuesA[3] = Integer.parseInt(text4);
                             valuesA[4] = Integer.parseInt(text5);
-                            
-                            // makes sure the user only inputs number that are 3 digits at max (not exceeding 999).
-                            if(valuesA[0] > 999 || valuesA[1] > 999 || valuesA[2] > 999 || valuesA[3] > 999 || valuesA[4] > 999) {
-                        		JOptionPane.showMessageDialog(null, "Values must not exceed 1000.", "Error", JOptionPane.ERROR_MESSAGE);
+
+                            // makes sure the user only inputs number that are 3 digits at max (not exceeding 999).                           
+                            for(int i = 0; i < 5; i++) {
+                            if(valuesA[i] > 999) {
+                        		JOptionPane.showMessageDialog(null, "Values must be 3 digits only.", "Error", JOptionPane.ERROR_MESSAGE);
                         		return;
                         	}
+                            }
+                            
                         } catch (NumberFormatException ex) {    
                         	
                         	// makes sure the inputs given are all integers / numerical values.
